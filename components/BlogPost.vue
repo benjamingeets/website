@@ -7,21 +7,13 @@
       </div>
       <h2 class="font-bold text-sm h-12">{{ title }}</h2>
       <p class="h-16 text-sm" :title="description">{{ description }}</p>
-      <time class="flex" style="color:#727272;"><Calendar size="20" color="#727272" class="mr-2"/>  {{ formatDate(date) }}</time>
+      <DateDisplay :date="date" dmy="3"/>
     </div>
   </nuxt-link>
 </template>
 
 <script>
-import Calendar from "~/components/icons/Calendar.vue"
 export default {
   props: ["title", "date", "image", "tags", "description","slug"],
-  components:{Calendar},
-  methods:{
-      formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('fr', options)
-    }
-  }
 };
 </script>
