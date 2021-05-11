@@ -9,6 +9,14 @@ site: {
     disponible: False,
     url: drinkstudent.be
 }
+git: {
+    disponible: True,
+    url: github.com
+}
+git: {
+    disponible: True,
+    url: github.com
+}
 ---
 **DrinkStudent** était un site créé en collaboration avec [Galand Tristan](https://galandtristan.be) listant une majorité de bars de Tournai ainsi que leur carte de bières/alcools/vins/...
 

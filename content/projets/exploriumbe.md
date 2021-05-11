@@ -9,6 +9,10 @@ site: {
     disponible: False,
     url: explorium.be
 }
+git: {
+    disponible: True,
+    url: github.com
+}
 ---
 
 Mise en place et customisation d'un blog WordPress avec [Tristan Galand](https://galandtristan.be).

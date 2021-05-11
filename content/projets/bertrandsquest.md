@@ -9,6 +9,10 @@ site: {
     disponible: True,
     url: bourgysquest.netlify.app/
 }
+git: {
+    disponible: True,
+    url: github.com
+}
 ---
 
 Avec [Galand Tristan]() se chargeant du web design/illustrations, Ugo Porcu, Antoine Gowie et moi même avons pensé, conçu et développé ce petit jeu pour navigateur en moins de 24h. 

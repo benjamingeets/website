@@ -6,6 +6,10 @@ description: Création d'un portfolio avec Next.js + Strapi comme CMS Headlass
 image: galandtristan.png
 emoji: 🖌
 site: { disponible: True, url: galandtristan.be }
+git: {
+    disponible: True,
+    url: github.com
+}
 ---
 
 Portfolio géré par un CMS Headless en back [(Strapi)](https://strapi.io).

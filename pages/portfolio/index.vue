@@ -1,7 +1,7 @@
 <template>
   <Display
     @setBold="setBold"
-    :portfolio="content"
+    :content="content"
     :boldTechno="boldListItem"
     :asideListProps="asideListProps"
     :title="boldListItem"

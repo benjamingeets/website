@@ -1,21 +1,14 @@
 <template>
   <article class="max-w-5xl mx-auto">
-    <div class="flex">
-      <div class="w-4/12">
-        <button
-          style="border:1px solid #398B9A; color:#398B9A;"
-          class="mx-auto flex items-center rounded-md px-4 py-2"
-          @click="$router.push('/portfolio')"
-        >
-          Retour
-        </button>
-      </div>
-      <div class="w-4/12 flex items-center flex-col">
-        <h1 class="text-4xl text-center">{{ projet.titre }}</h1>
-        <DateDisplay :date="projet.date" dmy="2" />
-      </div>
-      <div class="w-4/12"></div>
+    <TopBarArticle :date="projet.date" :titre="projet.titre" dmy="2" root='/portfolio'/>
+    <ImageArticle :image="projet.image" :url="url" :github="github" />
+    <div class="flex justify-evenly my-8">
+      <span v-for="(techno, index) in projet.technologies" :key="index">{{
+        techno
+      }}</span>
     </div>
+    <nuxt-content class="bg-gray-100 py-6 rounded-md mx-2" :document="projet" />
+    <Share root="/portfolio" :target="'portfolio'" :slug="projet.slug" :titre="projet.titre"/>
   </article>
 </template>
 
@@ -62,6 +55,26 @@ export default {
     let projet;
     projet = await $content("projets", params.project).fetch();
     return { projet };
+  },
+  computed: {
+    url() {
+      let lien;
+      if (this.projet.site.disponible) {
+        lien = this.projet.site.url;
+      } else {
+        lien = null;
+      }
+      return lien;
+    },
+    github() {
+      let lien;
+      if (this.projet.git.disponible) {
+        lien = this.projet.git.url;
+      } else {
+        lien = null;
+      }
+      return lien;
+    }
   }
 };
 </script>

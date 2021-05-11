@@ -9,6 +9,10 @@ site: {
     disponible: True,
     url: haptoanneso.be
 }
+git: {
+    disponible: True,
+    url: github.com
+}
 ---
 
 Site vitrine réalisé sous WordPress.

@@ -9,6 +9,10 @@ site: {
     disponible: True,
     url: jardingreg.be
 }
+git: {
+    disponible: True,
+    url: github.com
+}
 ---
 
 Intégration complètement manuelle (HTML/CSS/JS) d'une maquette réalisée par [Tristan Galand](https://galandtristan.be).

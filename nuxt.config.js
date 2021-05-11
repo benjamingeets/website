@@ -3,6 +3,22 @@ const description =
 const title = "Benjamin Geets :: Développeur web (Tournai \\ Belgique)";
 const domain = "https://geets.dev";
 const shareImage = domain + "/img/portfolio/benjamingeets.webp";
+
+let routes = []
+
+const createSitemapRoutes = async () => {
+  const { $content } = require("@nuxt/content");
+  let posts = await $content("blog").fetch();
+  posts.forEach(post => {
+    routes.push(`blog/${post.slug}`);
+  });
+  let portfolio = await $content("projets").fetch();
+  portfolio.forEach(projet => {
+    routes.push(`portfolio/${projet.slug}`);
+  });
+  return routes;
+};
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
@@ -53,15 +69,48 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxtjs/tailwindcss"],
 
+  
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    "@nuxt/content"
+    "@nuxt/content","@nuxtjs/feed","@nuxtjs/sitemap"
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  sitemap: {
+    hostname: domain,
+    gzip: true,
+    routes: createSitemapRoutes
+  },
+  feed: {
+    path: "/feed.xml", // The route to your feed.
+    async create(feed) {
+      feed.options = {
+        title: "Benjamin Geets :: Blog",
+        link: `${domain}/blog/`,
+        description: "Etudiant belge et développeur web"
+      };
+      const { $content } = require("@nuxt/content");
+      let posts = await $content("blog").fetch();
+      
+      posts.forEach(post => {
+        const lien = `${domain}/blog/${post.slug}`;
+        feed.addItem({
+          title: post.titre,
+          image: `${domain}/img/blog/header/${post.image}`,
+          id: lien,
+          link: lien,
+          description: post.description,
+          date: new Date(post.date)
+        });
+      });
+    }, // The create function (see below)
+    cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+    type: "rss2" // Can be: rss2, atom1, json1
+  },
 };

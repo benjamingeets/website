@@ -9,6 +9,10 @@ site: {
     disponible: True,
     url: benjamingeets.be
 }
+git: {
+    disponible: True,
+    url: github.com
+}
 ---
 
 Création de ce site internet avec le framework **Nuxt.js** permettant de faire du rendu côté serveur avec **Vue.js** (optimisant le SEO). 

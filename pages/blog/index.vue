@@ -1,6 +1,6 @@
 <template>
   <Display
-    :portfolio="articles"
+    :content="articles"
     title="Blog"
     type="blog"
     @moreArticles='displayMoreArticles()'

@@ -9,6 +9,10 @@ site: {
     disponible: True,
     url: visualkraken.netlify.app
 }
+git: {
+    disponible: True,
+    url: github.com
+}
 ---
 
 Création d'une agence web en coopération avec [Tristan Galand](https://galandtristan.be).
