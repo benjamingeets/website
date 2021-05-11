@@ -4,7 +4,6 @@
       :date="post.date"
       :titre="post.titre"
       root="/blog"
-      :tags="post.tags"
       dmy="3"
     />
     <div class="px-2 pb-10">
@@ -14,6 +13,12 @@
     <Share root="/blog" :slug="post.slug" target="blog" :titre="post.titre" />
   </article>
 </template>
+
+<style>
+.nuxt-link-active[href='/blog']{
+  font-weight: bold;
+}
+</style>
 
 <script>
 export default {

@@ -10,8 +10,7 @@ site: {
     url: explorium.be
 }
 git: {
-    disponible: True,
-    url: github.com
+    disponible: False
 }
 ---
 

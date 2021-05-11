@@ -8,7 +8,7 @@ emoji: 🖌
 site: { disponible: True, url: galandtristan.be }
 git: {
     disponible: True,
-    url: github.com
+    url: github.com/benjamingeets/galandtristanbe
 }
 ---
 

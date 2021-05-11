@@ -1,15 +1,12 @@
 <template>
     <div class="">
       <time class="flex" style="color:#727272;"><Calendar size="20" color="#727272" class="mr-2"/>  {{ formatDate(date) }}</time>
-      <div v-if="tags" class="flex flex-wrap justify-center">
-        <Tag class="ml-2" v-for='(tag,index) in tags' :key="index" :tag='tag'/>
-      </div>
     </div>
 </template>
 <script>
 import Calendar from "~/components/icons/Calendar.vue"
 export default {
-    props:["date","dmy","tags"],
+    props:["date","dmy"],
   components:{Calendar},
       methods:{
       formatDate(date) {

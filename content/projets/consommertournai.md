@@ -10,8 +10,7 @@ site: {
     url: consommertournai.be
 }
 git: {
-    disponible: True,
-    url: github.com
+    disponible: False
 }
 ---
 

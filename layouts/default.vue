@@ -19,7 +19,7 @@ div {
   margin: 40px auto;
 }
 .nuxt-content ul li {
-  margin: 10px 0;
+  margin: 10px 50px;
 }
 .nuxt-content ul li::before {
   content: "- ";
@@ -53,6 +53,9 @@ div {
   .nuxt-content h2{
     margin: 10px 20px;
     font-size:1.5rem;
+  }
+  .nuxt-content ul li{
+    margin:10px 20px;
   }
 }
 </style>

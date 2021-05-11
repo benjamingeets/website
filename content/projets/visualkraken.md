@@ -11,7 +11,7 @@ site: {
 }
 git: {
     disponible: True,
-    url: github.com
+    url: github.com/benjamingeets/visualkrakenbe
 }
 ---
 

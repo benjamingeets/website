@@ -10,7 +10,7 @@
     </div>
     <div class="md:w-8/12 w-12/12 flex items-center flex-col">
       <Title :text="titre" />
-      <DateDisplay :date="date" :dmy="dmy" :tags="tags" class="flex mt-4 flex-wrap items-center justify-center"/>
+      <DateDisplay :date="date" :dmy="dmy" class="flex mt-4 flex-wrap items-center justify-center"/>
     </div>
     <div class="w-2/12"></div>
   </div>

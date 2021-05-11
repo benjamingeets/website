@@ -1,19 +1,28 @@
 ---
 titre : Site personnel
-date: 2021-03-01
-technologies : [Nuxt.js,SASS,Markdown]
+date: 2021-05-01
+technologies : [Nuxt.js,SASS,Markdown,Tailwind CSS]
 description: Création d'un site/blog/portfolio avec gestion de contenu sous NuxtJS.
 image : benjamingeets.webp
 emoji: 👨‍💼
 site: {
     disponible: True,
-    url: benjamingeets.be
+    url: geets.dev
 }
 git: {
     disponible: True,
-    url: github.com
+    url: github.com/benjamingeets/geetsdev
 }
 ---
+## Refonte : mai 2021
+
+Re-création de 0 de mon site/blog/portfolio. Initialement réalisé avec le framework css classless Sakura, j'ai décidé de le refaire en gérant le CSS moi même afin de ne pas avoir à écrire par dessus un framework et ne plus être limité. Cela m'a demandé un investissement en temps plus important mais me permettera de mieux maintenant mon code.
+
+Le design du site a été fait pas [Galand Tristan](https://galandtristan.be)
+
+J'en ai profité pour tenter l'expérience TailwindCSS + Nuxt.js. 
+
+## Déploiement initial: mars 2021
 
 Création de ce site internet avec le framework **Nuxt.js** permettant de faire du rendu côté serveur avec **Vue.js** (optimisant le SEO). 
 
@@ -24,4 +33,5 @@ N'ayant pas besoin d'être trop fréquemment mis à jour, les performances du si
 ![](/img/portfolio/media/google_score.png)
 
 Afin de mettre son contenu facilement à jour, j'utilise l'extension [Content de Nuxt.js](https://content.nuxtjs.org/fr/) permettant de simplement créer des fichiers **Markdown** pour ajouter des éléments. A chaque mise à jour du [répertoire sur GitHub](https://github.com/benjamingeets/benjamingeets), [Netlify](https://netlify.com) re-génère mon site.
+
 

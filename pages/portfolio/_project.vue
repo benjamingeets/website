@@ -12,6 +12,12 @@
   </article>
 </template>
 
+<style>
+.nuxt-link-active[href='/portfolio']{
+  font-weight: bold;
+}
+</style>
+
 <script>
 export default {
   head() {

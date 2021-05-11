@@ -10,8 +10,7 @@ site: {
     url: haptoanneso.be
 }
 git: {
-    disponible: True,
-    url: github.com
+    disponible: False
 }
 ---
 
