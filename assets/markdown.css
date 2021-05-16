@@ -1,52 +1,70 @@
 .nuxt-content p {
-    margin: 10px 50px;
-    line-height: 2rem;
-  }
-  .nuxt-content p img {
-    margin: 40px auto;
-  }
-  .nuxt-content ul li {
-    margin: 10px 50px;
-  }
-  .nuxt-content ul li::before {
-    content: "- ";
-  }
-  .nuxt-content a {
-    color: #398b9a;
-  }
-  .nuxt-content h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 30px 50px;;
-  }
+  margin: 10px 50px;
+  line-height: 2rem;
+}
+.nuxt-content table {
+  margin: 50px;
+}
+.nuxt-content blockquote{
+  border-left:3px solid #398b9a;
+  margin: 10px 50px;
+  padding:10px 0;
+  background: rgb(240, 240, 240);
+}
+.nuxt-content p img {
+  margin: 40px auto;
+}
+.nuxt-content ul li,
+.nuxt-content ol li {
+  margin: 10px 50px;
+}
+.nuxt-content ul li::before {
+  content: "- ";
+}
+.nuxt-content a {
+  color: #398b9a;
+}
+.nuxt-content a:hover {
+  color:#2d727e;
+  transition: 300ms;
+}
+
+.nuxt-content h2,
+.nuxt-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 30px 50px;
+}
+.nuxt-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 30px 50px;
+}
+.nuxt-content h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 30px 50px;
+}
+.nuxt-content .nuxt-content-highlight {
+  margin: 0 40px;
+}
+@media (max-width: 600px) {
   .nuxt-content h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 30px 50px;;
-  }
-  .nuxt-content h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 30px 50px;;
-  }
-  .nuxt-content .nuxt-content-highlight{
-    margin: 0 40px;
-  }
-  @media (max-width: 600px) {
-    .nuxt-content h3 {
     font-size: 1.3rem;
     font-weight: bold;
-    margin: 30px 50px;;
+    margin: 30px 50px;
   }
-    .nuxt-content p {
-      margin: 10px 20px;
-      line-height: 2rem;
-    }
-    .nuxt-content h2{
-      margin: 10px 20px;
-      font-size:1.5rem;
-    }
-    .nuxt-content ul li{
-      margin:10px 20px;
-    }
+  .nuxt-content p {
+    margin: 10px 20px;
+    line-height: 2rem;
   }
+  .nuxt-content h2,
+  .nuxt-content h1 {
+    margin: 10px 20px;
+    font-size: 1.5rem;
+  }
+  .nuxt-content ul li,
+  .nuxt-content ol li,.nuxt-content .nuxt-content-highlight,.nuxt-content blockquote,.nuxt-content h3,.nuxt-content h4,.nuxt-content table {
+    margin: 10px 20px;
+  }
+}
