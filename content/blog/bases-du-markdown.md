@@ -6,7 +6,7 @@ tags: [Markdown]
 date: 2021-03-23
 ---
 
-[Je vous en parlais dans cet article](https://benjamingeets.be/blog/module-content-nuxt), mon blog tourne via des fichiers en .md. Cela induit que j'écris mes blog post et mon portfolio en markdown dans VS Code directement. Voici ma petit _cheatsheet_ !
+[Je vous en parlais dans cet article](/blog/module-content-nuxt), mon blog tourne via des fichiers en .md. Cela induit que j'écris mes blog post et mon portfolio en markdown dans VS Code directement. Voici ma petit _cheatsheet_ !
 
 ## Cheatsheet du MarkDown
 
