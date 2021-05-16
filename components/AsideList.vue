@@ -1,6 +1,6 @@
 <template>
   <aside v-if="asideListProps">
-    <ul class="absolute left-10 xl:block hidden">
+    <ul class="absolute left-20">
       <li>
         <span class="font-bold cursor-default" v-if="boldItem == 'Tout'">Tout</span>
         <span @click="setBold('Tout')" class="cursor-pointer" v-else>Tout</span>
@@ -18,7 +18,7 @@
     <div>
       <select
         v-model="choice"
-        class="block my-8 xl:hidden mx-auto border-2 rounded-md"
+        class="my-8 mx-auto border-2 rounded-md"
         @change="setBold(choice)"
       >
         <option>Tout</option>
@@ -33,6 +33,18 @@
 <style scoped>
 li span:hover{
   font-weight: bold;
+}
+select{
+  display: none;
+}
+
+@media (max-width:1354px){
+  ul{
+    display: none;
+  }
+  select{
+    display: block;
+  }
 }
 </style>
 
