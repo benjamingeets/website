@@ -54,7 +54,7 @@ export default {
           }
         }
       }
-      if (articles.length % 6 != 0) {
+      if (articles.length % 6 != 0 || articles.length == 0) {
         this.displayButton = false;
       } else {
         this.displayButton = true;
