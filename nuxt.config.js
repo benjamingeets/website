@@ -2,7 +2,7 @@ const description =
   "Etudiant en e-Business depuis 2019, je me suis spécialisé dans le développement web à l'aide de frameworks moderne tels VueJS/NuxtJS, Svelte,...";
 const title = "Benjamin Geets :: Développeur web (Tournai \\ Belgique)";
 const domain = "https://geets.dev";
-const shareImage = domain + "/img/portfolio/benjamingeets.webp";
+const shareImage = domain + "/og_image.jpg";
 
 let routes = []
 
