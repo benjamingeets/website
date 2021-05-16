@@ -11,7 +11,7 @@
         v-model="query"
         @input="setQuery()"
       />
-      <Search class="cursor-pointer" color="#2c3e50" size="25" />
+      <Search class="cursor-pointer mx-2" color="#2c3e50" size="25" />
     </div>
   </div>
 </template>
