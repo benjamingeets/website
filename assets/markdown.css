@@ -24,6 +24,11 @@
     font-weight: bold;
     margin: 30px 50px;;
   }
+  .nuxt-content h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 30px 50px;;
+  }
   .nuxt-content .nuxt-content-highlight{
     margin: 0 40px;
   }

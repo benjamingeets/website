@@ -1,6 +1,7 @@
 <template>
   <div class="static oui">
     <Title :text="titleToDisplay" extraStyle="xl:my-16 my-8" />
+    <SearchBar @setQuery="setQuery" class="xl:-mt-8 -mt-4 mb-8" v-if='type== "blog"'/>
     <div class="max-w-5xl mx-auto">
       <AsideList
         v-if="type == 'portfolio'"
@@ -28,6 +29,9 @@ export default {
   methods: {
     setBold(value) {
       this.$emit("setBold", value);
+    },
+    setQuery(value) {
+      this.$emit("setQuery", value);
     }
   },
   computed: {
