@@ -54,7 +54,7 @@ export default {
       },
       { hid: "twitter:image", name: "twitter:image", content: shareImage }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon-32x32.png" }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
