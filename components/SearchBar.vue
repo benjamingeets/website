@@ -11,7 +11,8 @@
         v-model="query"
         @input="setQuery()"
       />
-      <Search class="cursor-pointer mx-2" color="#2c3e50" size="25" />
+      <Search v-if="query.length < 1" class="cursor-pointer mx-2" color="#2c3e50" size="25" />
+      <Close @click.native='$emit("clear");query = ""' v-else size="25" class="cursor-pointer mx-2" color="#2c3e50"/>
     </div>
   </div>
 </template>
@@ -24,6 +25,7 @@
 
 <script>
 import Search from "~/components/icons/Search.vue";
+import Close from "~/components/icons/Close.vue";
 export default {
   data() {
     return {
@@ -35,6 +37,6 @@ export default {
       this.$emit("setQuery", this.query);
     }
   },
-  components: { Search }
+  components: { Search,Close }
 };
 </script>

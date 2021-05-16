@@ -6,6 +6,7 @@
     @moreArticles="displayMoreArticles()"
     :displayButton="displayButton"
     @setQuery="changeContent"
+    @clear="searchQuery = ''"
   />
 </template>
 
