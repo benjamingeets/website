@@ -16,6 +16,12 @@
   </div>
 </template>
 
+<style scoped>
+ input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+</style>
+
 <script>
 import Search from "~/components/icons/Search.vue";
 export default {
