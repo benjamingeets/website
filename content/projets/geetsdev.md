@@ -3,7 +3,7 @@ titre : Site personnel
 date: 2021-05-01
 technologies : [Nuxt.js,SASS,Markdown,Tailwind CSS]
 description: Création d'un site/blog/portfolio avec gestion de contenu sous NuxtJS.
-image : benjamingeets.webp
+image : benjamingeets.png
 emoji: 👨‍💼
 site: {
     disponible: True,
