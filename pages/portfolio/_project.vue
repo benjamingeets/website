@@ -13,6 +13,7 @@
 </template>
 
 <style>
+@import '@/assets/markdown.css';
 .nuxt-link-active[href='/portfolio']{
   font-weight: bold;
 }

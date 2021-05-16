@@ -16,7 +16,13 @@
   </main>
 </template>
 
+<style scoped>
 
+.nuxt-content p{
+    margin:0;
+  }
+
+</style>
 
 <script>
 import CV from "~/components/icons/CV.vue"

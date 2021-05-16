@@ -30,6 +30,12 @@
   </aside>
 </template>
 
+<style scoped>
+li span:hover{
+  font-weight: bold;
+}
+</style>
+
 <script>
 export default {
   props: ["asideListProps", "boldItem"],

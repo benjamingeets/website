@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link class="mb-10 mx-2" :to="'/portfolio/'+link" :title="title">
+    <nuxt-link class="mb-10 mx-2 hover:shadow-md transition duration-300" :to="'/portfolio/'+link" :title="title">
     <div class="w-80 bg-gray-100 rounded-md p-4 h-full" >
         <div class="flex mb-4">
             <div class="w-16 flex justify-center items-center h-16 rounded-md text-3xl" style="background-color:#398B9A;">

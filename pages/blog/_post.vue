@@ -15,9 +15,11 @@
 </template>
 
 <style>
+@import '@/assets/markdown.css';
 .nuxt-link-active[href='/blog']{
   font-weight: bold;
 }
+
 </style>
 
 <script>

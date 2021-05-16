@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="'/blog/' + slug" class="w-80 mx-2 rounded-md mb-10">
+  <nuxt-link :to="'/blog/' + slug" class="w-80 mx-2 rounded-md mb-10 hover:shadow-md transition duration-300">
     <img loading="lazy" class="rounded-t-md" :src="'/img/blog/header/' + image"  :alt="title" />
     <div class="bg-gray-100 px-4 py-4 rounded-b-md ">
       <h2 class="font-bold text-md">{{ title }}</h2>
