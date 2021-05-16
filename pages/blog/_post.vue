@@ -9,7 +9,7 @@
     <div class="px-2 pb-10">
       <img class="rounded-md" :src="`/img/blog/header/${post.image}`" alt="" />
     </div>
-    <nuxt-content class="bg-gray-100 py-6 rounded-md mx-2" :document="post" />
+    <nuxt-content class="bg-gray-100 md:py-6 py-3 rounded-md mx-2" :document="post" />
     <Share root="/blog" :slug="post.slug" target="blog" :titre="post.titre" />
   </article>
 </template>

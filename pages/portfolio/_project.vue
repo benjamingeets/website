@@ -7,7 +7,7 @@
         techno
       }}</span>
     </div>
-    <nuxt-content class="bg-gray-100 py-6 rounded-md mx-2" :document="projet" />
+    <nuxt-content class="bg-gray-100 md:py-6 py-3 rounded-md mx-2" :document="projet" />
     <Share root="/portfolio" :target="'portfolio'" :slug="projet.slug" :titre="projet.titre"/>
   </article>
 </template>
