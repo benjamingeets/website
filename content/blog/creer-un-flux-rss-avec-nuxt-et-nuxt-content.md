@@ -58,20 +58,17 @@ const posts = await $content("blog").fetch()
 
 ```javascript
 posts.forEach(post => {
-  const lien = `lien/vers/votre/article`
   feed.addItem({
     title: post.titre,
     image: `lien/vers/votre/image`,
-    id: lien,
-    link: lien,
+    id: `lien/vers/votre/article`,
+    link: `lien/vers/votre/article`,
     description: post.description,
     date: new Date(post.date)
   })
 })
 ```
 
-Dans ce cas précis, je crée une constante lien qui utilise une autre constante avec mon domaine et le slug afin de créer mes URLs.
-On y ajoute un titre, une image, un id, un lien, une description et une date. Tout cela est optionnel et vous avez aussi la possibilité de directement y entrer du contenu.
 
 ## Le code complet
 
