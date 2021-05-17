@@ -1,8 +1,10 @@
 <template>
   <aside v-if="asideListProps">
-    <ul class="absolute left-20">
+    <ul class="absolute xl:left-20 left-10">
       <li>
-        <span class="font-bold cursor-default" v-if="boldItem == 'Tout'">Tout</span>
+        <span class="font-bold cursor-default" v-if="boldItem == 'Tout'"
+          >Tout</span
+        >
         <span @click="setBold('Tout')" class="cursor-pointer" v-else>Tout</span>
       </li>
       <li v-for="(item, index) in asideListProps" :key="index">
@@ -31,18 +33,18 @@
 </template>
 
 <style scoped>
-li span:hover{
+li span:hover {
   font-weight: bold;
 }
-select{
+select {
   display: none;
 }
 
-@media (max-width:1354px){
-  ul{
+@media (max-width: 1400px) {
+  ul {
     display: none;
   }
-  select{
+  select {
     display: block;
   }
 }
