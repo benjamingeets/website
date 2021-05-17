@@ -4,7 +4,7 @@ const title = "Benjamin Geets :: Développeur web (Tournai \\ Belgique)";
 const domain = "https://geets.dev";
 const shareImage = domain + "/og_image.jpg";
 
-let routes = []
+let routes = [];
 
 const createSitemapRoutes = async () => {
   const { $content } = require("@nuxt/content");
@@ -63,18 +63,22 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
+  generate: {
+    fallback: true
+  },
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxtjs/tailwindcss"],
 
-  
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    "@nuxt/content","@nuxtjs/feed","@nuxtjs/sitemap"
+    "@nuxt/content",
+    "@nuxtjs/feed",
+    "@nuxtjs/sitemap"
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -97,7 +101,7 @@ export default {
       };
       const { $content } = require("@nuxt/content");
       let posts = await $content("blog").fetch();
-      
+
       posts.forEach(post => {
         const lien = `${domain}/blog/${post.slug}`;
         feed.addItem({
@@ -112,5 +116,5 @@ export default {
     }, // The create function (see below)
     cacheTime: 1000 * 60 * 15, // How long should the feed be cached
     type: "rss2" // Can be: rss2, atom1, json1
-  },
+  }
 };
