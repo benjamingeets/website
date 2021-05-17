@@ -8,11 +8,11 @@ let routes = [];
 
 const createSitemapRoutes = async () => {
   const { $content } = require("@nuxt/content");
-  let posts = await $content("blog").fetch();
+  const posts = await $content("blog").fetch();
   posts.forEach(post => {
     routes.push(`blog/${post.slug}`);
   });
-  let portfolio = await $content("projets").fetch();
+  const portfolio = await $content("projets").fetch();
   portfolio.forEach(projet => {
     routes.push(`portfolio/${projet.slug}`);
   });
@@ -20,10 +20,7 @@ const createSitemapRoutes = async () => {
 };
 
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: "static",
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: title,
     htmlAttrs: {
@@ -56,35 +53,20 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon-32x32.png" }]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
   generate: {
     fallback: true
   },
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxtjs/tailwindcss"],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/content
     "@nuxt/content",
     "@nuxtjs/feed",
     "@nuxtjs/sitemap"
   ],
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   sitemap: {
     hostname: domain,
@@ -92,7 +74,7 @@ export default {
     routes: createSitemapRoutes
   },
   feed: {
-    path: "/feed.xml", // The route to your feed.
+    path: "/feed.xml",
     async create(feed) {
       feed.options = {
         title: "Benjamin Geets :: Blog",
@@ -100,7 +82,7 @@ export default {
         description: "Etudiant belge et développeur web"
       };
       const { $content } = require("@nuxt/content");
-      let posts = await $content("blog").fetch();
+      const posts = await $content("blog").fetch();
 
       posts.forEach(post => {
         const lien = `${domain}/blog/${post.slug}`;
@@ -113,8 +95,8 @@ export default {
           date: new Date(post.date)
         });
       });
-    }, // The create function (see below)
-    cacheTime: 1000 * 60 * 15, // How long should the feed be cached
-    type: "rss2" // Can be: rss2, atom1, json1
+    }, 
+    cacheTime: 1000 * 60 * 15, 
+    type: "rss2"
   }
 };
