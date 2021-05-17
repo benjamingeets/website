@@ -1,5 +1,5 @@
 <template>
-  <Display
+     <Display
     :content="articles"
     title="Blog"
     type="blog"
@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     displayMoreArticles() {
-      if (this.articlesQuantity + 6 <= this.blog_posts.length) {
+      if (this.articlesQuantity + 6 < this.blog_posts.length) {
         this.articlesQuantity = this.articlesQuantity + 6;
       } else {
         this.articlesQuantity = this.blog_posts.length;

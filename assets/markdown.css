@@ -1,6 +1,6 @@
 .nuxt-content p {
   margin: 10px 50px;
-  line-height: 2rem;
+  line-height: 1rem;
 }
 .nuxt-content table {
   margin: 50px;
@@ -56,7 +56,6 @@
   }
   .nuxt-content p {
     margin: 10px 20px;
-    line-height: 2rem;
   }
   .nuxt-content h2,
   .nuxt-content h1 {
