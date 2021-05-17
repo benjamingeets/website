@@ -89,12 +89,11 @@ export default {
       const posts = await $content("blog").fetch()
 
       posts.forEach(post => {
-        const lien = `lien/vers/votre/article`
         feed.addItem({
           title: post.titre,
           image: `lien/vers/votre/image`,
-          id: lien,
-          link: lien,
+          id: `lien/vers/votre/article`,
+          link: `lien/vers/votre/article`,
           description: post.description,
           date: new Date(post.date)
         })
