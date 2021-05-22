@@ -30,7 +30,7 @@ export default {
         this.portfolio.forEach(elt => {
           elt.technologies.forEach(techno => {
             if (techno == this.boldListItem && !projets.includes(elt)) {
-              projets.push(elt);
+              projets.push(elt)
             }
           });
         });
