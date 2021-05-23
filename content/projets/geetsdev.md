@@ -32,6 +32,6 @@ N'ayant pas besoin d'être trop fréquemment mis à jour, les performances du si
 
 ![](/img/portfolio/media/google_score.png)
 
-Afin de mettre son contenu facilement à jour, j'utilise l'extension [Content de Nuxt.js](https://content.nuxtjs.org/fr/) permettant de simplement créer des fichiers **Markdown** pour ajouter des éléments. A chaque mise à jour du [répertoire sur GitHub](https://github.com/benjamingeets/benjamingeets), [Netlify](https://netlify.com) re-génère mon site.
+Afin de mettre son contenu facilement à jour, j'utilise l'extension [Content de Nuxt.js](https://content.nuxtjs.org/fr/) permettant de simplement créer des fichiers **Markdown** pour ajouter des éléments. A chaque mise à jour du [répertoire sur GitHub](https://github.com/benjamingeets/geetsdev), [Netlify](https://netlify.com) re-génère mon site.
 
 
