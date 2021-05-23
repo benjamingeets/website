@@ -28,7 +28,7 @@ Création de ce site internet avec le framework **Nuxt.js** permettant de faire 
 
 Cependant, je génère du **contenu statique**. 
 
-N'ayant pas besoin d'être trop fréquemment mis à jour, les performances du site sont donc incomparables [(score de 100/100 en 📱 et 💻 sur Google PageSpeed Insight)](https://developers.google.com/speed/pagespeed/insights/?hl=fr&url=https%3A%2F%2Fbenjamingeets.be%2F).
+N'ayant pas besoin d'être trop fréquemment mis à jour, les performances du site sont donc incomparables [(score de 100/100 en 📱 et 💻 sur Google PageSpeed Insight)](https://developers.google.com/speed/pagespeed/insights/?hl=fr&url=https%3A%2F%2Fgeets.dev%2F).
 
 ![](/img/portfolio/media/google_score.png)
 
