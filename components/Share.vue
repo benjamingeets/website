@@ -11,7 +11,7 @@
       "
       target="_blank"
       class="sm:mx-2 mx-1"
-      ><GreenButton><Twitter size="25" color="#398B9A"/></GreenButton
+      ><GreenButton extraStyle=""><Twitter size="25" color="#398B9A"/></GreenButton
     ></a>
     <a
       :href="
@@ -19,7 +19,7 @@
       "
       target="_blank"
       class="sm:mx-2 mx-1"
-      ><GreenButton><Facebook size="25" color="#398B9A"/></GreenButton
+      ><GreenButton extraStyle=""><Facebook size="25" color="#398B9A"/></GreenButton
     ></a>
     <a
       :href="
@@ -27,7 +27,7 @@
       "
       target="_blank"
       class="sm:mx-2 mx-1"
-      ><GreenButton><Linkedin size="25" color="#398B9A"/></GreenButton
+      ><GreenButton extraStyle=""><Linkedin size="25" color="#398B9A"/></GreenButton
     ></a>
   </div>
 </template>
