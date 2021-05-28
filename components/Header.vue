@@ -1,6 +1,6 @@
 <template>
     <header class="border-b-2 md:px-20 px-4 py-5">
-        <h1 class="md:text-4xl sm:text-3xl text-3xl lg:text-left text-center font-bold">Benjamin Geets</h1>
+        <h1 style="font-family: 'happy times'" class="md:text-4xl sm:text-3xl text-3xl lg:text-left text-center font-bold">Benjamin Geets</h1>
         <div class="flex justify-between pt-5 items-center">
             <Navbar/>
             <a target="_blank" href="/feed.xml" class="border-2 px-8 py-2 rounded-md items-center hover:bg-gray-100 duration-300 lg:flex hidden"><RSS class="mr-2" color="#2c3e50" :size="iconSize"/>Suivre</a>
