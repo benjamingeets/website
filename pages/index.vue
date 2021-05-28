@@ -1,6 +1,6 @@
 <template>
   <main class="max-w-5xl mx-auto px-2">
-    <div style="background-color:#398B9A;" class="text-white px-8 py-12 rounded-md mt-20">
+    <div style="background:url('/foug.jpg');background-size:cover;background-color:#398B9A;" class="text-white px-8 py-12 rounded-md mt-20">
       <h2 class="lg:text-6xl md:text-5xl text-4xl font-bold">Benjamin Geets</h2>
       <h3 class="mt-6 mb-10 md:text-2xl text-md">Etudiant \ Développeur web, Tournai</h3>
        <Social size="45" color="#fff"/>
