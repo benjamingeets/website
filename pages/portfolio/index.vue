@@ -11,6 +11,11 @@
 
 <script>
 export default {
+  head(){
+    return{
+      title:'Portfolio :: Benjamin Geets :: Développeur web (Tournai \\ Belgique)'
+    }
+  },
   async asyncData({ $content }) {
     let portfolio;
     portfolio = await $content("projets")

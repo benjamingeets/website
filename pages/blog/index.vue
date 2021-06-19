@@ -12,6 +12,11 @@
 
 <script>
 export default {
+  head(){
+    return{
+      title:'Blog :: Benjamin Geets :: Développeur web (Tournai \\ Belgique)'
+    }
+  },
   data() {
     return {
       articlesQuantity: 6,
