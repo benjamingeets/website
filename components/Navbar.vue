@@ -3,7 +3,7 @@
                 <ul class="flex lg:max-w-lg justify-between">
                     <li title="Accueil"><nuxt-link to="/" :class="linkStyle"><Home :class="iconStyle" :size="iconSize"/> <p class="ml-1">Accueil</p></nuxt-link></li>
                     <li title="Portfolio"><nuxt-link to="/portfolio" :class="linkStyle"><Folder :class="iconStyle" :size="iconSize"/> <p class="ml-1">Portfolio</p></nuxt-link></li>
-                    <li title="Blog"><nuxt-link to="/blog" :class="linkStyle"><Paper :class="iconStyle" :size="iconSize"/> <p class="ml-1">Blog</p></nuxt-link></li>
+                    <li title="Blog"><a target="_blank" href='https://www.notion.so/geets/Blog-2b2b3ff033e641969da6d875ffd01d91' :class="linkStyle"><Paper :class="iconStyle" :size="iconSize"/> <p class="ml-1">Blog</p></a></li>
                 </ul>
             </nav>
 </template>
