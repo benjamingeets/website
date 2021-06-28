@@ -6,7 +6,6 @@
           <li :class="liStyle" title="Github"><a href="http://github.com/benjamingeets" target="_blank"><Github :class="iconStyle" :size="size" :color="color"/></a></li>
           <li :class="liStyle" title="Linkedin"><a href="http://linkedin.com/in/benjamingeets" target="_blank"><Linkedin :class="iconStyle" :size="size" :color="color"/></a></li>
           <li :class="liStyle" title="CV"><a href="https://www.notion.so/geets/Benjamin-Geets-99a84be8748541249cbbe3e820439c70" target="_blank"><CV :class="iconStyle" :size="size" :color="color"/></a></li>
-        <li :class="liStyle + ' text-white text-3xl flex justify-center items-center hover:text-green-600 duration-300' " ><a target="_blank" href="https://www.notion.so/geets/Blog-Benjamin-Geets-2b2b3ff033e641969da6d875ffd01d91"><p>Blog</p></a></li>
         <li :class="liStyle + ' text-white text-3xl flex justify-center items-center hover:text-green-600 duration-300' " ><a target="_blank" href="https://www.notion.so/geets/Portfolio-Benjamin-Geets-76eeb03b6c0343178c65cec788676a86">Portfolio</a></li>
         </ul>
         </div>
