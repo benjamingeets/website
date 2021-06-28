@@ -5,7 +5,7 @@
       <h3 class="mt-6 mb-10 md:text-2xl text-md">Etudiant \ Développeur web, Tournai</h3>
        <Social size="45" color="#fff"/>
     </div>
-    <div class="mt-14 text-center text-2xl"><a class="text-green-700 hover:text-green-600" target="_blank" href="https://www.notion.so/geets/Benjamin-Geets-Blog-2b2b3ff033e641969da6d875ffd01d91">Blog</a> / <a class="text-green-700 hover:text-green-600" target="_blank" href="https://www.notion.so/geets/Benjamin-Geets-Portfolio-76eeb03b6c0343178c65cec788676a86">Portfolio</a></div>
+
     <div class="flex py-14 px-4 md:flex-row flex-col">
       <div class="max-w-xs mx-auto">
         <img class="rounded-md" src="~/assets/images/benjamingeets.webp" alt="Benjamin Geets" title="Benjamin Geets">
