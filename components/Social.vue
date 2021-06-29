@@ -5,7 +5,7 @@
           <li :class="liStyle" title="Contact"><a target="_blank" href="#" id="mail" @click="contact()" ><Mail :class="iconStyle" :size="size" :color="color"/></a></li>
           <li :class="liStyle" title="Github"><a href="http://github.com/benjamingeets" target="_blank"><Github :class="iconStyle" :size="size" :color="color"/></a></li>
           <li :class="liStyle" title="Linkedin"><a href="http://linkedin.com/in/benjamingeets" target="_blank"><Linkedin :class="iconStyle" :size="size" :color="color"/></a></li>
-          <li :class="liStyle" title="CV"><a href="https://www.notion.so/geets/Benjamin-Geets-99a84be8748541249cbbe3e820439c70" target="_blank"><CV :class="iconStyle" :size="size" :color="color"/></a></li>
+          <!--<li :class="liStyle" title="CV"><a href="https://www.notion.so/geets/Benjamin-Geets-99a84be8748541249cbbe3e820439c70" target="_blank"><CV :class="iconStyle" :size="size" :color="color"/></a></li>-->
         <li :class="liStyle + ' text-white text-3xl flex justify-center items-center hover:text-green-600 duration-300' " ><a target="_blank" href="https://www.notion.so/geets/f4051e384b694f2ca309d2467cee58ed?v=a1c0a56b446b489bb48aa07c1e0f000e">Portfolio</a></li>
         </ul>
         </div>
