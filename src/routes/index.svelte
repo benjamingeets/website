@@ -1,18 +1,18 @@
 
 <script>
     import ExternalLink from '$lib/icons/ExternalLink.svelte';
-import IconDisplay from '$lib/icons/IconDisplay.svelte'
-    import { onMount } from 'svelte';
+    import IconDisplay from '$lib/icons/IconDisplay.svelte'
     const title = "Benjamin Geets :: Développeur web (Tournai \ Belgique)"
     const description = "Etudiant en e-Business depuis 2019, je me suis spécialisé dans le développement web à l'aide de frameworks tels Vue.js, Svelte,..."
     const url = "https://geets.dev"
     const shareImage = url + "/images/share.jpg"
     let links = [
-        {text:"Github",href:"https://github.com/benjamingeets", color:"#4B5563"},
-        {text:"LinkedIn",href:"https://linkedin.com/in/benjamingeets", color:"#4B5563"},
-        {text:"Blog",href:"https://blog.geets.dev", color:"#4B5563"},
-        {text:"CV",href:"https://cv.geets.dev", color:"#4B5563"},
-        {text:"Contact",href:"mailto:benjamin@geets.dev", color:"#4B5563"}
+        {text:"Github",href:"https://github.com/benjamingeets"},
+        {text:"LinkedIn",href:"https://linkedin.com/in/benjamingeets"},
+        {text:"Blog",href:"https://blog.geets.dev"},
+        {text:"CV",href:"https://cv.geets.dev"},
+        {text:"Portfolio",href:"https://portfolio.geets.dev"},
+        {text:"Contact",href:"mailto:benjamin@geets.dev"},
     ]
 </script>
 
@@ -52,7 +52,7 @@ import IconDisplay from '$lib/icons/IconDisplay.svelte'
             <ul class="md:w-2/12 w-12/12 flex md:flex-col flex-row md:justify-center flex-wrap">
                 {#each links as link}
                     <li class="mr-2 mt-2 flex">
-                        <a id="link" target="_blank" class="font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="{link.href}"><IconDisplay name="{link.text}" color="{link.color}"/> <span class="mx-2">{link.text}</span> <span id="outside"><ExternalLink/></span> </a>
+                        <a id="link" target="_blank" class="font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="{link.href}"><IconDisplay name="{link.text}"/> <span class="mx-2">{link.text}</span> <span id="outside"><ExternalLink/></span> </a>
                     </li>
                 {/each}
             </ul>
