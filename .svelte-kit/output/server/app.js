@@ -31,6 +31,13 @@ const escaped = {
 function escape(html) {
   return String(html).replace(/["'&<>]/g, (match) => escaped[match]);
 }
+function each(items, fn) {
+  let str = "";
+  for (let i = 0; i < items.length; i += 1) {
+    str += fn(items[i], i);
+  }
+  return str;
+}
 const missing_component = {
   $$render: () => ""
 };
@@ -133,7 +140,7 @@ var user_hooks = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module"
 });
-const template = ({ head, body }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body>\n		<div id="svelte">' + body + "</div>\n	</body>\n</html>\n";
+const template = ({ head, body }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="/favicon.ico" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body>\n		<div id="svelte">' + body + "</div>\n	</body>\n</html>\n";
 let options = null;
 const default_settings = { paths: { "base": "", "assets": "/." } };
 function init(settings = default_settings) {
@@ -143,9 +150,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/./_app/start-5abc1c33.js",
+      file: "/./_app/start-dd7566eb.js",
       css: ["/./_app/assets/start-0826e215.css"],
-      js: ["/./_app/start-5abc1c33.js", "/./_app/chunks/vendor-95bb789e.js"]
+      js: ["/./_app/start-dd7566eb.js", "/./_app/chunks/vendor-3faf32c5.js"]
     },
     fetched: void 0,
     floc: false,
@@ -205,7 +212,7 @@ const module_lookup = {
     return index;
   })
 };
-const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-1f4b334a.js", "css": ["/./_app/assets/pages/__layout.svelte-54f36cea.css"], "js": ["/./_app/pages/__layout.svelte-1f4b334a.js", "/./_app/chunks/vendor-95bb789e.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-8a05ecaa.js", "css": [], "js": ["/./_app/error.svelte-8a05ecaa.js", "/./_app/chunks/vendor-95bb789e.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-7d4c1a4f.js", "css": [], "js": ["/./_app/pages/index.svelte-7d4c1a4f.js", "/./_app/chunks/vendor-95bb789e.js"], "styles": [] } };
+const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-0974a931.js", "css": ["/./_app/assets/pages/__layout.svelte-259e1542.css"], "js": ["/./_app/pages/__layout.svelte-0974a931.js", "/./_app/chunks/vendor-3faf32c5.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-aed6e96b.js", "css": [], "js": ["/./_app/error.svelte-aed6e96b.js", "/./_app/chunks/vendor-3faf32c5.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-c125edaa.js", "css": [], "js": ["/./_app/pages/index.svelte-c125edaa.js", "/./_app/chunks/vendor-3faf32c5.js"], "styles": [] } };
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -218,7 +225,7 @@ function render(request, {
   const host = request.headers["host"];
   return respond({ ...request, host }, options, { prerender });
 }
-var app = "/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com*//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */html{-webkit-text-size-adjust:100%;line-height:1.15;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;margin:0}hr{color:inherit;height:0}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}body{font-family:inherit;line-height:inherit}*,:after,:before{border:0 solid;box-sizing:border-box}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{color:inherit;line-height:inherit;padding:0}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-border-opacity:1;border-color:rgba(229,231,235,var(--tw-border-opacity))}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-auto{margin-left:auto;margin-right:auto}.mt-4{margin-top:1rem}.mt-20{margin-top:5rem}.mt-6{margin-top:1.5rem}.mb-10{margin-bottom:2.5rem}.flex{display:flex}.max-w-5xl{max-width:64rem}.max-w-xs{max-width:20rem}.transform{transform:var(--tw-transform)}.cursor-pointer{cursor:pointer}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.rounded-md{border-radius:.375rem}.border-2{border-width:2px}.px-2{padding-left:.5rem;padding-right:.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-12{padding-bottom:3rem;padding-top:3rem}.py-14{padding-bottom:3.5rem;padding-top:3.5rem}.px-4{padding-left:1rem;padding-right:1rem}.pl-0{padding-left:0}.pt-10{padding-top:2.5rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.font-bold{font-weight:700}.leading-8{line-height:2rem}.text-white{--tw-text-opacity:1;color:rgba(255,255,255,var(--tw-text-opacity))}.duration-300{transition-duration:.3s}.hover\\:rotate-45:hover{--tw-rotate:45deg;transform:var(--tw-transform)}.hover\\:border-green-600:hover{--tw-border-opacity:1;border-color:rgba(5,150,105,var(--tw-border-opacity))}.hover\\:text-green-600:hover{--tw-text-opacity:1;color:rgba(5,150,105,var(--tw-text-opacity))}@media (min-width:768px){.md\\:mx-2{margin-left:.5rem;margin-right:.5rem}.md\\:w-9\\/12{width:75%}.md\\:flex-row{flex-direction:row}.md\\:pl-10{padding-left:2.5rem}.md\\:pt-0{padding-top:0}.md\\:text-5xl{font-size:3rem;line-height:1}.md\\:text-2xl{font-size:1.5rem;line-height:2rem}}@media (min-width:1024px){.lg\\:text-6xl{font-size:3.75rem;line-height:1}.lg\\:text-xl{font-size:1.25rem;line-height:1.75rem}.lg\\:leading-10{line-height:2.5rem}}";
+var app = "/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com*//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */html{-webkit-text-size-adjust:100%;line-height:1.15;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;margin:0}hr{color:inherit;height:0}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}body{font-family:inherit;line-height:inherit}*,:after,:before{border:0 solid;box-sizing:border-box}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{color:inherit;line-height:inherit;padding:0}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-bottom:.5rem;margin-top:.5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mr-2{margin-right:.5rem}.mt-2{margin-top:.5rem}.ml-2{margin-left:.5rem}.block{display:block}.flex{display:flex}.h-1{height:.25rem}.min-h-screen{min-height:100vh}.w-screen{width:100vw}.max-w-5xl{max-width:64rem}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.rounded-sm{border-radius:.125rem}.bg-gray-200{--tw-bg-opacity:1;background-color:rgba(229,231,235,var(--tw-bg-opacity))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgba(209,213,219,var(--tw-bg-opacity))}.p-8{padding:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.font-bold{font-weight:700}.text-gray-600{--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity))}.hover\\:text-gray-800:hover{--tw-text-opacity:1;color:rgba(31,41,55,var(--tw-text-opacity))}@media (prefers-color-scheme:dark){.dark\\:bg-gray-900{--tw-bg-opacity:1;background-color:rgba(17,24,39,var(--tw-bg-opacity))}.dark\\:bg-gray-800{--tw-bg-opacity:1;background-color:rgba(31,41,55,var(--tw-bg-opacity))}.dark\\:text-gray-100{--tw-text-opacity:1;color:rgba(243,244,246,var(--tw-text-opacity))}.dark\\:text-gray-300{--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity))}.dark\\:hover\\:text-gray-50:hover{--tw-text-opacity:1;color:rgba(249,250,251,var(--tw-text-opacity))}}@media (min-width:640px){.sm\\:min-h-0{min-height:0}.sm\\:rounded-lg{border-radius:.5rem}.sm\\:p-4{padding:1rem}}@media (min-width:768px){.md\\:hidden{display:none}.md\\:w-9\\/12{width:75%}.md\\:w-2\\/12{width:16.666667%}.md\\:flex-row{flex-direction:row}.md\\:flex-col{flex-direction:column}.md\\:justify-center{justify-content:center}.md\\:justify-between{justify-content:space-between}.md\\:text-5xl{font-size:3rem;line-height:1}.md\\:text-2xl{font-size:1.5rem;line-height:2rem}}";
 const _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${slots.default ? slots.default({}) : ``}`;
 });
@@ -252,66 +259,60 @@ var error = /* @__PURE__ */ Object.freeze({
   "default": Error$1,
   load
 });
-const Mail = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { size: size2 } = $$props;
-  let { color: color2 } = $$props;
-  let { className } = $$props;
-  if ($$props.size === void 0 && $$bindings.size && size2 !== void 0)
-    $$bindings.size(size2);
-  if ($$props.color === void 0 && $$bindings.color && color2 !== void 0)
-    $$bindings.color(color2);
-  if ($$props.className === void 0 && $$bindings.className && className !== void 0)
-    $$bindings.className(className);
-  return `<svg xmlns="${"http://www.w3.org/2000/svg"}"${add_attribute("class", className, 0)}${add_attribute("width", size2, 0)}${add_attribute("height", size2, 0)} viewBox="${"0 0 24 24"}" stroke-width="${"1.5"}"${add_attribute("stroke", color2, 0)} fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path stroke="${"none"}" d="${"M0 0h24v24H0z"}" fill="${"none"}"></path><path d="${"M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"}"></path><path d="${"M3 6l9 6l9 -6"}"></path><path d="${"M15 18h6"}"></path><path d="${"M18 15l3 3l-3 3"}"></path></svg>`;
-});
-const GitHub = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { size: size2 } = $$props;
-  let { color: color2 } = $$props;
-  let { className } = $$props;
-  if ($$props.size === void 0 && $$bindings.size && size2 !== void 0)
-    $$bindings.size(size2);
-  if ($$props.color === void 0 && $$bindings.color && color2 !== void 0)
-    $$bindings.color(color2);
-  if ($$props.className === void 0 && $$bindings.className && className !== void 0)
-    $$bindings.className(className);
-  return `<svg xmlns="${"http://www.w3.org/2000/svg"}"${add_attribute("class", className, 0)}${add_attribute("width", size2, 0)}${add_attribute("height", size2, 0)} viewBox="${"0 0 24 24"}" stroke-width="${"1.5"}"${add_attribute("stroke", color2, 0)} fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path stroke="${"none"}" d="${"M0 0h24v24H0z"}" fill="${"none"}"></path><path d="${"M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"}"></path></svg>`;
-});
-const LinkedIn = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { size: size2 } = $$props;
-  let { color: color2 } = $$props;
-  let { className } = $$props;
-  if ($$props.size === void 0 && $$bindings.size && size2 !== void 0)
-    $$bindings.size(size2);
-  if ($$props.color === void 0 && $$bindings.color && color2 !== void 0)
-    $$bindings.color(color2);
-  if ($$props.className === void 0 && $$bindings.className && className !== void 0)
-    $$bindings.className(className);
-  return `<svg xmlns="${"http://www.w3.org/2000/svg"}"${add_attribute("class", className, 0)}${add_attribute("width", size2, 0)}${add_attribute("height", size2, 0)} viewBox="${"0 0 24 24"}" stroke-width="${"1.5"}"${add_attribute("stroke", color2, 0)} fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path stroke="${"none"}" d="${"M0 0h24v24H0z"}" fill="${"none"}"></path><rect x="${"4"}" y="${"4"}" width="${"16"}" height="${"16"}" rx="${"2"}"></rect><line x1="${"8"}" y1="${"11"}" x2="${"8"}" y2="${"16"}"></line><line x1="${"8"}" y1="${"8"}" x2="${"8"}" y2="${"8.01"}"></line><line x1="${"12"}" y1="${"16"}" x2="${"12"}" y2="${"11"}"></line><path d="${"M16 16v-3a2 2 0 0 0 -4 0"}"></path></svg>`;
-});
-const liStyle = "md:mx-2 mx-1";
-const iconStyle = "transform hover:rotate-45 duration-300 cursor-pointer";
-const color = "#fff";
-const size = "45";
-const Social = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<div class="${"flex mt-4 justify"}"><ul class="${"flex flex-wrap"}"><li${add_attribute("class", liStyle, 0)} title="${"Contact"}"><a target="${"_blank"}" href="${"mailto:benjamin@geets.dev"}">${validate_component(Mail, "Mail").$$render($$result, { className: iconStyle, size, color }, {}, {})}</a></li>
-        <li${add_attribute("class", liStyle, 0)} title="${"Github"}"><a href="${"http://github.com/benjamingeets"}" target="${"_blank"}">${validate_component(GitHub, "GitHub").$$render($$result, { className: iconStyle, size, color }, {}, {})}</a></li>
-        <li${add_attribute("class", liStyle, 0)} title="${"Linkedin"}"><a href="${"http://linkedin.com/in/benjamingeets"}" target="${"_blank"}">${validate_component(LinkedIn, "LinkedIn").$$render($$result, { className: iconStyle, size, color }, {}, {})}</a></li> 
-         <li class="${escape(liStyle) + " text-white text-3xl flex justify-center items-center hover:text-green-600 hover:border-green-600 duration-300 border-2 rounded-md px-2"}"><a target="${"_blank"}" href="${"https://portfolio.geets.dev"}">Portfolio</a></li></ul></div>`;
+const IconDisplay = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { name = "" } = $$props;
+  let { size = 25 } = $$props;
+  let { color } = $$props;
+  if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+    $$bindings.name(name);
+  if ($$props.size === void 0 && $$bindings.size && size !== void 0)
+    $$bindings.size(size);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
+    $$bindings.color(color);
+  return `${name == "Github" ? `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon icon-tabler icon-tabler-brand-github"}"${add_attribute("width", size, 0)}${add_attribute("height", size, 0)} viewBox="${"0 0 24 24"}" stroke-width="${"1.5"}"${add_attribute("stroke", color, 0)} fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path stroke="${"none"}" d="${"M0 0h24v24H0z"}" fill="${"none"}"></path><path d="${"M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"}"></path></svg>` : `${name === "CV" ? `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon icon-tabler icon-tabler-file-certificate"}"${add_attribute("width", size, 0)}${add_attribute("height", size, 0)} viewBox="${"0 0 24 24"}" stroke-width="${"1.5"}"${add_attribute("stroke", color, 0)} fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path stroke="${"none"}" d="${"M0 0h24v24H0z"}" fill="${"none"}"></path><path d="${"M14 3v4a1 1 0 0 0 1 1h4"}"></path><path d="${"M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5"}"></path><circle cx="${"6"}" cy="${"14"}" r="${"3"}"></circle><path d="${"M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5"}"></path></svg>` : `${name === "LinkedIn" ? `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon icon-tabler icon-tabler-brand-linkedin"}"${add_attribute("width", size, 0)}${add_attribute("height", size, 0)} viewBox="${"0 0 24 24"}" stroke-width="${"1.5"}"${add_attribute("stroke", color, 0)} fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path stroke="${"none"}" d="${"M0 0h24v24H0z"}" fill="${"none"}"></path><rect x="${"4"}" y="${"4"}" width="${"16"}" height="${"16"}" rx="${"2"}"></rect><line x1="${"8"}" y1="${"11"}" x2="${"8"}" y2="${"16"}"></line><line x1="${"8"}" y1="${"8"}" x2="${"8"}" y2="${"8.01"}"></line><line x1="${"12"}" y1="${"16"}" x2="${"12"}" y2="${"11"}"></line><path d="${"M16 16v-3a2 2 0 0 0 -4 0"}"></path></svg>` : `${name === "Blog" ? `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon icon-tabler icon-tabler-signature"}"${add_attribute("width", size, 0)}${add_attribute("height", size, 0)} viewBox="${"0 0 24 24"}" stroke-width="${"1.5"}"${add_attribute("stroke", color, 0)} fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path stroke="${"none"}" d="${"M0 0h24v24H0z"}" fill="${"none"}"></path><path d="${"M3 17c3.333 -3.333 5 -6 5 -8c0 -3 -1 -3 -2 -3s-2.032 1.085 -2 3c.034 2.048 1.658 4.877 2.5 6c1.5 2 2.5 2.5 3.5 1l2 -3c.333 2.667 1.333 4 3 4c.53 0 2.639 -2 3 -2c.517 0 1.517 .667 3 2"}"></path></svg>` : `${name === "Contact" ? `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon icon-tabler icon-tabler-send"}"${add_attribute("width", size, 0)}${add_attribute("height", size, 0)} viewBox="${"0 0 24 24"}" stroke-width="${"1.5"}"${add_attribute("stroke", color, 0)} fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path stroke="${"none"}" d="${"M0 0h24v24H0z"}" fill="${"none"}"></path><line x1="${"10"}" y1="${"14"}" x2="${"21"}" y2="${"3"}"></line><path d="${"M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5"}"></path></svg>` : ``}`}`}`}`}`;
 });
 const title = "Benjamin Geets :: D\xE9veloppeur web (Tournai  Belgique)";
 const description = "Etudiant en e-Business depuis 2019, je me suis sp\xE9cialis\xE9 dans le d\xE9veloppement web \xE0 l'aide de frameworks tels VueJS, Svelte,...";
 const url = "https://geets.dev";
 const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const shareImage = url + "/images/share.jpg";
+  let iconColor = "#4B5563";
+  let links = [
+    {
+      text: "Github",
+      href: "https://github.com/benjamingeets",
+      color: iconColor
+    },
+    {
+      text: "LinkedIn",
+      href: "https://linkedin.com/in/benjamingeets",
+      color: iconColor
+    },
+    {
+      text: "Blog",
+      href: "https://blog.geets.dev",
+      color: iconColor
+    },
+    {
+      text: "CV",
+      href: "https://cv.geets.dev",
+      color: iconColor
+    },
+    {
+      text: "Contact",
+      href: "mailto:benjamin@geets.dev",
+      color: iconColor
+    }
+  ];
   return `${$$result.head += `${$$result.title = `<title>${escape(title)}</title>`, ""}<meta name="${"title"}"${add_attribute("content", title, 0)} data-svelte="svelte-1kbt6t8"><meta name="${"description"}"${add_attribute("content", description, 0)} data-svelte="svelte-1kbt6t8"><meta property="${"og:type"}" content="${"website"}" data-svelte="svelte-1kbt6t8"><meta property="${"og:url"}"${add_attribute("content", url, 0)} data-svelte="svelte-1kbt6t8"><meta property="${"og:title"}"${add_attribute("content", title, 0)} data-svelte="svelte-1kbt6t8"><meta property="${"og:description"}"${add_attribute("content", description, 0)} data-svelte="svelte-1kbt6t8"><meta property="${"og:image"}"${add_attribute("content", shareImage, 0)} data-svelte="svelte-1kbt6t8"><meta property="${"twitter:card"}" content="${"summary_large_image"}" data-svelte="svelte-1kbt6t8"><meta property="${"twitter:url"}"${add_attribute("content", url, 0)} data-svelte="svelte-1kbt6t8"><meta property="${"twitter:title"}"${add_attribute("content", title, 0)} data-svelte="svelte-1kbt6t8"><meta property="${"twitter:description"}"${add_attribute("content", description, 0)} data-svelte="svelte-1kbt6t8"><meta property="${"twitter:image"}"${add_attribute("content", shareImage, 0)} data-svelte="svelte-1kbt6t8">`, ""}
 
-<main class="${"max-w-5xl mx-auto px-2"}"><div style="${"background:url('/images/foug.jpg');background-size:cover;background-color:#398B9A;"}" class="${"text-white px-8 py-12 rounded-md mt-20"}"><h2 class="${"lg:text-6xl md:text-5xl text-4xl font-bold"}">Benjamin Geets</h2>
-      <h3 class="${"mt-6 mb-10 md:text-2xl text-md"}">D\xE9veloppeur web, Tournai</h3>
-        ${validate_component(Social, "Social").$$render($$result, {}, {}, {})}</div>
 
-    <div class="${"flex py-14 px-4 md:flex-row flex-col"}"><div class="${"max-w-xs mx-auto"}"><img class="${"rounded-md"}" src="${"/images/benjamingeets.webp"}" alt="${"Benjamin Geets"}" title="${"Benjamin Geets"}"></div>
-      <div class="${"md:w-9/12 w-12/12 lg:leading-10 leading-8 md:pl-10 pl-0 md:pt-0 pt-10 flex items-center lg:text-xl text-lg "}"><p>Etudiant en derni\xE8re ann\xE9e \xE0 la <b>HEPH Condorcet</b> en section e-Business, j&#39;ai toujours \xE9t\xE9 passionn\xE9 par l&#39;informatique. J&#39;ai commenc\xE9 \xE0 bidouiller <b>d\xE8s que j&#39;ai eu un ordinateur entre les mains</b>. Aujourd&#39;hui, je me suis beaucoup <b>form\xE9 \xE0 travers diff\xE9rents cours en ligne</b> et d\xE9veloppe principalement en JavaScript avec React, Vue, Svelte,... et je commence \xE0 me former au backend avec <b>Node.js</b> et <b>Python</b>.
-        </p></div></div></main>`;
+<div class="${"min-h-screen w-screen dark:bg-gray-900 dark:text-gray-100"}"><main class="${"max-w-5xl mx-auto min-h-screen flex items-center sm:p-4"}"><div class="${"bg-gray-200 dark:bg-gray-800 p-8 sm:rounded-lg sm:min-h-0 min-h-screen flex md:flex-row flex-col md:justify-between"}"><div class="${"flex flex-col md:w-9/12 w-12/12"}"><h1 class="${"md:text-5xl text-3xl font-bold"}">Benjamin Geets \u{1F343}</h1>
+                <h2 class="${"font-bold md:text-2xl text-lg my-2"}">D\xE9veloppeur web</h2>
+                <p>Etudiant en derni\xE8re ann\xE9e \xE0 la <b>HEPH Condorcet</b> en section e-Business, j&#39;ai toujours \xE9t\xE9 passionn\xE9 par l&#39;informatique. J&#39;ai commenc\xE9 \xE0 bidouiller <b>d\xE8s que j&#39;ai eu un ordinateur entre les mains</b>. Aujourd&#39;hui, je me suis beaucoup <b>form\xE9 \xE0 travers diff\xE9rents cours en ligne</b> et d\xE9veloppe principalement en JavaScript avec React, Vue, Svelte,... et je commence \xE0 me former au backend avec <b>Node.js</b> et <b>Python</b>.</p></div>
+            <hr class="${"md:hidden block my-4 h-1 rounded-sm bg-gray-300"}">
+            <ul class="${"md:w-2/12 w-12/12 flex md:flex-col flex-row md:justify-center flex-wrap"}">${each(links, (link) => `<li class="${"mr-2 mt-2"}"><a target="${"_blank"}" class="${"font-bold text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-50 flex"}"${add_attribute("href", link.href, 0)}>${validate_component(IconDisplay, "IconDisplay").$$render($$result, { name: link.text, color: link.color }, {}, {})} <span class="${"ml-2"}">${escape(link.text)} </span></a>
+                    </li>`)}</ul></div></main></div>`;
 });
 var index = /* @__PURE__ */ Object.freeze({
   __proto__: null,

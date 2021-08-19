@@ -1,9 +1,19 @@
+
 <script>
-    import Social from "$lib/Social.svelte"
+    import ExternalLink from '$lib/icons/ExternalLink.svelte';
+import IconDisplay from '$lib/icons/IconDisplay.svelte'
+    import { onMount } from 'svelte';
     const title = "Benjamin Geets :: Développeur web (Tournai \ Belgique)"
-    const description = "Etudiant en e-Business depuis 2019, je me suis spécialisé dans le développement web à l'aide de frameworks tels VueJS, Svelte,..."
+    const description = "Etudiant en e-Business depuis 2019, je me suis spécialisé dans le développement web à l'aide de frameworks tels Vue.js, Svelte,..."
     const url = "https://geets.dev"
     const shareImage = url + "/images/share.jpg"
+    let links = [
+        {text:"Github",href:"https://github.com/benjamingeets", color:"#4B5563"},
+        {text:"LinkedIn",href:"https://linkedin.com/in/benjamingeets", color:"#4B5563"},
+        {text:"Blog",href:"https://blog.geets.dev", color:"#4B5563"},
+        {text:"CV",href:"https://cv.geets.dev", color:"#4B5563"},
+        {text:"Contact",href:"mailto:benjamin@geets.dev", color:"#4B5563"}
+    ]
 </script>
 
 <svelte:head>
@@ -28,21 +38,33 @@
 
 </svelte:head>
 
-<main class="max-w-5xl mx-auto px-2">
-    <div style="background:url('/images/foug.jpg');background-size:cover;background-color:#398B9A;" class="text-white px-8 py-12 rounded-md mt-20">
-      <h2 class="lg:text-6xl md:text-5xl text-4xl font-bold">Benjamin Geets</h2>
-      <h3 class="mt-6 mb-10 md:text-2xl text-md">Développeur web, Tournai</h3>
-        <Social/>
-    </div>
 
-    <div class="flex py-14 px-4 md:flex-row flex-col">
-      <div class="max-w-xs mx-auto">
-        <img class="rounded-md" src="/images/benjamingeets.webp" alt="Benjamin Geets" title="Benjamin Geets">
-      </div>
-      <div class="md:w-9/12 w-12/12 lg:leading-10 leading-8 md:pl-10 pl-0 md:pt-0 pt-10 flex items-center lg:text-xl text-lg ">
-        <p>
-            Etudiant en dernière année à la <b>HEPH Condorcet</b> en section e-Business, j'ai toujours été passionné par l'informatique. J'ai commencé à bidouiller <b>dès que j'ai eu un ordinateur entre les mains</b>. Aujourd'hui, je me suis beaucoup <b>formé à travers différents cours en ligne</b> et développe principalement en JavaScript avec React, Vue, Svelte,... et je commence à me former au backend avec <b>Node.js</b> et <b>Python</b>.
-        </p>
-      </div>
-    </div>
-  </main>
+<div class="min-h-screen w-screen dark:bg-gray-900 dark:text-gray-100">
+    <main class="max-w-5xl mx-auto min-h-screen flex items-center sm:p-4">
+        <div class="bg-gray-200 dark:bg-gray-800 p-8 sm:rounded-lg sm:min-h-0 min-h-screen flex md:flex-row flex-col md:justify-between">
+            <div class="flex flex-col md:w-9/12 w-12/12">
+                <h1 class="md:text-5xl text-3xl font-bold">Benjamin Geets 🍃</h1>
+                <h2 class="font-bold md:text-2xl text-lg my-2">Développeur web</h2>
+                <p>Etudiant en dernière année à la <b>HEPH Condorcet</b> en section e-Business, j'ai toujours été passionné par l'informatique. J'ai commencé à bidouiller <b>dès que j'ai eu un ordinateur entre les mains</b>. Aujourd'hui, je me suis beaucoup <b>formé à travers différents cours en ligne</b> et développe principalement en JavaScript avec Svelte, Vue, React,... et je commence à me former au backend avec <b>Node.js</b> et <b>Python</b>.</p>
+                
+            </div>
+            <hr class="md:hidden block my-4 h-1">
+            <ul class="md:w-2/12 w-12/12 flex md:flex-col flex-row md:justify-center flex-wrap">
+                {#each links as link}
+                    <li class="mr-2 mt-2 flex">
+                        <a id="link" target="_blank" class="font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="{link.href}"><IconDisplay name="{link.text}" color="{link.color}"/> <span class="mx-2">{link.text}</span> <span id="outside"><ExternalLink/></span> </a>
+                    </li>
+                {/each}
+            </ul>
+        </div>
+    </main>
+</div>
+
+<style>
+    #link #outside{
+        display: none;
+    }
+    #link:hover #outside{
+        display: block;
+    }
+</style>
