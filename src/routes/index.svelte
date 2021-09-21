@@ -45,7 +45,7 @@
             <div class="flex flex-col md:w-9/12 w-12/12">
                 <h1 class="md:text-5xl text-3xl font-bold">Benjamin Geets 🍃</h1>
                 <h2 class="font-bold md:text-2xl text-lg my-2">Développeur web</h2>
-                <p>Etudiant en dernière année à la <b>HEPH Condorcet</b> en section e-Business, j'ai toujours été passionné par l'informatique. J'ai commencé à bidouiller <b>dès que j'ai eu un ordinateur entre les mains</b>. Aujourd'hui, je me suis beaucoup <b>formé à travers différents cours en ligne</b> et développe principalement en JavaScript avec Svelte, Vue, React,... et je découvre <b>Node.js</b> pour mon side project <i>principal</i>, <a href="https://saveurbelge.be" target="_blank">SaveurBelge</a>.</p>
+                <p>Etudiant en dernière année à la <b>HEPH Condorcet</b> en section e-Business, j'ai toujours été passionné par l'informatique. J'ai commencé à bidouiller <b>dès que j'ai eu un ordinateur entre les mains</b>. Aujourd'hui, je me suis beaucoup <b>formé à travers différents cours en ligne</b> et développe principalement en JavaScript avec Svelte, Vue, React,... et je commence à me former au backend avec <b>Node.js</b>.</p>
                 
             </div>
             <hr class="md:hidden block my-4 h-1">
