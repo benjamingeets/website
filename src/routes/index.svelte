@@ -9,8 +9,6 @@
     let links = [
         {text:"Github",href:"https://github.com/benjamingeets"},
         {text:"LinkedIn",href:"https://linkedin.com/in/benjamingeets"},
-        {text:"Blog",href:"https://blog.geets.dev"},
-        {text:"CV",href:"https://cv.geets.dev"},
         {text:"Portfolio",href:"https://portfolio.geets.dev"},
         {text:"Contact",href:"mailto:benjamin@geets.dev"},
     ]
