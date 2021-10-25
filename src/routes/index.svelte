@@ -50,7 +50,7 @@
             <ul class="md:w-2/12 w-12/12 flex md:flex-col flex-row md:justify-center flex-wrap">
                 {#each links as link}
                     <li class="mr-2 mt-2 flex">
-                        <a id="link" target="_blank" class="font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="{link.href}"><IconDisplay name="{link.text}"/> <span class="mx-2">{link.text}</span> <span id="outside"><ExternalLink/></span> </a>
+                        <a id="link" rel="noopener" target="_blank" class="font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="{link.href}"><IconDisplay name="{link.text}"/> <span class="mx-2">{link.text}</span> <span id="outside"><ExternalLink/></span> </a>
                     </li>
                 {/each}
             </ul>
