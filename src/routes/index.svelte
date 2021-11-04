@@ -6,10 +6,10 @@
     const url = "https://geets.dev"
     const shareImage = url + "/images/share.jpg"
     let links = [
-        {text:"Github",href:"https://github.com/benjamingeets"},
-        {text:"LinkedIn",href:"https://linkedin.com/in/benjamingeets"},
+        {text:"Github",href:"https://github.com/benjamingeets", external:true},
+        {text:"LinkedIn",href:"https://linkedin.com/in/benjamingeets", external:true},
         {text:"Portfolio",href:"https://portfolio.geets.dev"},
-        {text:"Contact",href:"mailto:benjamin@geets.dev"},
+        {text:"Contact",href:"mailto:benjamin@geets.dev",},
     ]
 </script>
 
@@ -49,7 +49,7 @@
             <ul class="md:w-2/12 w-12/12 flex md:flex-col flex-row md:justify-center flex-wrap">
                 {#each links as link}
                     <li class="mr-2 mt-2 flex">
-                        <a rel="noopener" target="_blank" class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="{link.href}"><IconDisplay name="{link.text}"/> <span class="mx-2">{link.text}</span> <span id="outside"><ExternalLink/></span> </a>
+                        <a rel="noopener" target="{link.external ? '_blank' : '_self'}" class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="{link.href}"><IconDisplay name="{link.text}"/> <span class="mx-2">{link.text}</span> <span id="outside">{#if link.external}<ExternalLink/>{/if}</span> </a>
                     </li>
                 {/each}
             </ul>
