@@ -1,9 +1,5 @@
-# Geets.dev
+# portfolio.geets.dev
 
-Création d'une page personnelle redirigeant vers un contact.
+Site static généré avec [11ty](https://www.11ty.dev/)
 
-## Technologies :
-
-- Svelte
-- SvelteKit
-- Tailwind CSS
+[TailwindCSS](https://tailwindcss.com/) pour le style
