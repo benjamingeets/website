@@ -56,7 +56,7 @@ const secondaryStack = [
                         <ul class="md:w-2/12 w-12/12 flex md:flex-col flex-row md:justify-center flex-wrap">
                             {links.map(l => (
                                 <li class="mr-2 mt-2 flex">
-                                    <a rel="noopener" target="_blank" class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href={ l.href }>
+                                    <a rel="noopener" target={l.external ? '_blank': '_self'} class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href={ l.href }>
                                     <Icons name={l.text}/>
                                     <span class="mx-2">{ l.text }</span>
                                     {l.external &&
