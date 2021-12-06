@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjetLayout.astro
 title: SaveurBelge
 emoji: 👨‍🌾
 lien: https://saveurbelge.be

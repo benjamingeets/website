@@ -1,0 +1,43 @@
+---
+let description= "Portfolio / Développeur web frontend / Benjamin Geets"
+if(Astro.props.description){
+    description = Astro.props.description
+}
+let title = "Portfolio"
+if(Astro.props.title){
+    title = Astro.props.title
+}
+let showName = false
+const url = "https://geets.dev"
+const paht = Astro.site.pathname
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{`${title}${Astro.props.index ? '  // Benjamin Geets' :''}`}</title>
+    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <!-- Primary Meta Tags -->
+    <meta name="title" content={`${title}${Astro.props.index ? '  // Benjamin Geets' :''}`}>
+    <meta name="description" content={`${description}${Astro.props.index ? '  // Benjamin Geets' :''}`}>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content={`${url}`}>
+    <meta property="og:title" content={`${title}${Astro.props.index ? '  // Benjamin Geets' :''}`}>
+    <meta property="og:description" content={description}>
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={url+Astro.site.pathname}>
+    <meta property="twitter:title" content={`${title}${Astro.props.index ? '  // Benjamin Geets' :''}`}>
+    <meta property="twitter:description" content={description}>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+<p>Layout</p>
+    <slot/>
+</body>
+</html>

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjetLayout.astro
 title: Galandtristan.be
 emoji: 📘
 description: Portfolio jamstack
@@ -8,7 +9,6 @@ techno:
     - SvelteKit
     - Cockpit
 ---
-
 # Galandtristan.be
 
 ![galandtristan.be](/img/galandtristan.webp)

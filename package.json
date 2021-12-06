@@ -1,15 +1,17 @@
 {
-  "name": "personnal-website",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@example/starter",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev":"npx @11ty/eleventy --serve & npx tailwind -i src/style.css -o dist/style.css --watch",
-    "build":"npx @11ty/eleventy && NODE_ENV=production npx tailwind -i src/style.css -o dist/style.css --minify"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@astrojs/renderer-react": "^0.3.1",
+    "@astrojs/renderer-svelte": "^0.2.2",
+    "astro": "^0.21.10",
     "tailwindcss": "^2.2.19"
   }
 }

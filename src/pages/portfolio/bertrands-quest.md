@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjetLayout.astro
 title: Bertrand's Quest
 emoji: 🎮
 lien: https://bourgysquest.netlify.app

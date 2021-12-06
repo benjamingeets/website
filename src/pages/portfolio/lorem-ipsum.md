@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjetLayout.astro
 title: Lorem Ipsum
 emoji: 🔮
 description: Site de génération de Lorem

@@ -1,0 +1,40 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+const { techno, github, lien, title, description } = Astro.props.content
+---
+
+    <MainLayout title={title} description={description} index={true}>
+        <div class="fixed md:left-4 md:bottom-auto bottom-0 md:w-auto w-screen p-2">
+            <a href="/portfolio" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 flex md:justify-start justify-center items-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="11 7 6 12 11 17" />
+                    <polyline points="17 7 12 12 17 17" />
+                </svg>
+                Retour
+            </a>
+        </div>
+        <article class="markdown max-w-2xl mx-auto mt-10 px-2">
+
+            <small>
+                {techno &&
+                    techno.map(t => (
+                        <span>#{t}</span>
+                    ))
+                }
+            </small>
+            <slot />
+        </article>
+        {(github || lien) &&
+            <div class="flex flex-wrap justify-center my-10 gap-4">
+                {github &&
+                    <a target="_blank" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 text-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400" href={github}>🐱 Code source</a>
+                }
+                {lien &&
+                    <a target="_blank" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 text-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400" href={lien}>🔗 { lien } </a>
+                }
+            </div>
+        }
+        <div class="md:h-0 h-20">
+        </div>
+    </MainLayout>

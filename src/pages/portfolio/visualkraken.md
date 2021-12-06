@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjetLayout.astro
 title: VisualKraken
 emoji: 🦑
 description: Site vitrine développé avec Nuxt

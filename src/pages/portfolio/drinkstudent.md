@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjetLayout.astro
 title: DrinkStudent
 description: Site comparant les tarfis des bars tournaisiens
 emoji: 🍻
