@@ -3,8 +3,6 @@ import MainLayout from '../../layouts/MainLayout.astro'
 const data = Astro.fetchContent('./*.md');
 ---
 
-<head><link rel="stylesheet" href={Astro.resolve('../styles/global.css')}></head>
-
 <MainLayout title="Portfolio" index={true}>
 <div class="block md:absolute md:m-0 m-5 left-10 top-10">
     <h1 class="text-2xl font-bold dark:text-gray-100">Benjamin Geets</h1>
