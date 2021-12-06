@@ -7,9 +7,7 @@ let title = "Portfolio"
 if(Astro.props.title){
     title = Astro.props.title
 }
-let showName = false
 const url = "https://geets.dev"
-const paht = Astro.site.pathname
 ---
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,6 +16,7 @@ const paht = Astro.site.pathname
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{`${title}${Astro.props.index ? '  // Benjamin Geets' :''}`}</title>
+    
     <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <!-- Primary Meta Tags -->
@@ -37,7 +36,6 @@ const paht = Astro.site.pathname
     <meta property="twitter:description" content={description}>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900">
-<p>Layout</p>
     <slot/>
 </body>
 </html>
