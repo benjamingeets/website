@@ -7,6 +7,10 @@ let title = "Portfolio"
 if(Astro.props.title){
     title = Astro.props.title
 }
+let shareImage = "https://geets.dev/img/share.png"
+if(Astro.props.shareImage){
+    shareImage=Astro.props.shareImage
+}
 const url = "https://geets.dev"
 ---
 <!DOCTYPE html>
@@ -28,12 +32,14 @@ const url = "https://geets.dev"
     <meta property="og:url" content={`${url}`}>
     <meta property="og:title" content={`${title}${Astro.props.index ? '  // Benjamin Geets' :''}`}>
     <meta property="og:description" content={description}>
+    <meta property="og:image" content={shareImage}>
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content={url}>
     <meta property="twitter:title" content={`${title}${Astro.props.index ? '  // Benjamin Geets' :''}`}>
     <meta property="twitter:description" content={description}>
+    <meta property="twitter:image" content={shareImage}>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900">
     <slot/>
