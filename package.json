@@ -1,5 +1,5 @@
 {
-  "name": "@example/starter",
+  "name": "@example/minimal",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,9 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/renderer-react": "^0.3.1",
-    "@astrojs/renderer-svelte": "^0.2.2",
-    "astro": "^0.21.6",
+    "astro": "^0.21.11",
     "tailwindcss": "^2.2.19"
   }
 }
