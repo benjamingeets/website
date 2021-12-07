@@ -1,5 +1,11 @@
-# geets.dev
+# Astro with Tailwind
 
-Site static généré avec [11ty](https://www.11ty.dev/)
+```
+npm init astro -- --template with-tailwindcss
+```
 
-[TailwindCSS](https://tailwindcss.com/) pour le style
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
+
+Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+
+For complete setup instructions, please see our [Styling Guide](https://docs.astro.build/guides/styling#-tailwind).

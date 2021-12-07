@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Main-BlogPost.astro
 title: DrinkStudent
 description: Site comparant les tarfis des bars tournaisiens
 emoji: 🍻

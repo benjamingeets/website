@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Main-BlogPost.astro
 title: VisualKraken
 emoji: 🦑
 description: Site vitrine développé avec Nuxt

@@ -1,15 +1,16 @@
 {
-  "name": "personnal-website",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@example/with-tailwindcss",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev":"npx @11ty/eleventy --serve & npx tailwind -i src/style.css -o dist/style.css --watch",
-    "build":"npx @11ty/eleventy && NODE_ENV=production npx tailwind -i src/style.css -o dist/style.css --minify"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "astro": "0.21.6",
+    "autoprefixer": "^10.4.0",
     "tailwindcss": "^2.2.19"
   }
 }

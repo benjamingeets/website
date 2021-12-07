@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Main-BlogPost.astro
 title: Bertrand's Quest
 emoji: 🎮
 lien: https://bourgysquest.netlify.app
