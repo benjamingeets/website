@@ -22,10 +22,10 @@ const secondaryStack = ['Vue','Astro','11ty']
 
 ---
  <style>
-        .link #outside{
+        .link .outside{
             display: none;
         }
-        .link:hover #outside{
+        .link:hover .outside{
             display: block;
         }
     </style>
@@ -54,7 +54,7 @@ const secondaryStack = ['Vue','Astro','11ty']
                             <a rel="noopener" target={e.external ? '_blank' : '_self'} class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href={e.href}>
                                 <Icon name={e.text}/>
                                 <span class="mx-2">{e.text}</span> 
-                                <span id="outside">
+                                <span class="outside">
                                     {e.external &&
                                         <Icon name="External"/>
                                     }
