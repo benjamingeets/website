@@ -23,3 +23,9 @@
 .markdown p{
     @apply my-4;
 }
+.markdown blockquote{
+    @apply bg-gray-200 dark:bg-gray-700 rounded-md;
+}
+.markdown blockquote p{
+    @apply p-2;
+}
