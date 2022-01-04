@@ -16,6 +16,8 @@ techno:
 
 ![Index](/img/index_sb.webp)
 
+**Status du projet**: Tenter de créer une web-app combinée à une API de A à Z seul (+ la gestion du VPS) était un peu trop ambitieux. Le projet est en cours de refonte, je compte le faire avec Adonisjs et HTMX pour le rendu AJX.
+
 SaveurBelge est une application web qui permet, sur base de la géolocalisation/du code postal de l'utilisateur d'indiquer les commerçant/producteurs locaux aux alentours. Pour y parvenir, tout un système d'utilisateur a été mis en place afin que les commerçants puissent eux-mêmes s'ajouter sur le site pour partager leurs commerces.
 
 Je me suis entièrement chargé du développement: backend, frontend, base de données (MongoDB) , déploiement,...
