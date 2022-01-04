@@ -10,7 +10,7 @@ const data = Astro.fetchContent('./portfolio/*.md');
             <p class="dark:text-gray-100">portfolio</p>
         </div>
         <div class="fixed md:left-8 md:bottom-auto md:top-28 bottom-0 md:w-auto w-screen p-2">
-            <a href="/" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 flex md:justify-start justify-center items-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400">
+            <a hx-get="/" hx-target="body" hx-push-url="true" href="/" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 flex md:justify-start justify-center items-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400">
                 <Icon name="Arrow-back"/>
                 Retour
             </a>
@@ -19,7 +19,7 @@ const data = Astro.fetchContent('./portfolio/*.md');
             <div class="max-w-3xl w-full px-2 md:mb-0 mb-2">
                 <div class="flex w-full flex-wrap gap-2">
                     {data.map(e => (
-                        <a href={e.url} class="transition border p-2 rounded-md bg-gray-200 dark:bg-gray-800 dark:border-gray-800 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-900 text-blue-800 dark:text-blue-300 hover:text-indigo-400">
+                        <a hx-get={e.url} hx-target="body" hx-push-url="true" href={e.url} class="transition border p-2 rounded-md bg-gray-200 dark:bg-gray-800 dark:border-gray-800 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-900 text-blue-800 dark:text-blue-300 hover:text-indigo-400">
                             <h3 class="font-bold">{e.emoji}  {e.title}</h3>
                             <small class="text-xs text-gray-600 dark:text-gray-200">
                                 {e.techno.map(f => (
