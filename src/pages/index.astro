@@ -51,7 +51,7 @@ const secondaryStack = ['Vue','Astro','11ty']
                 <ul class="md:w-2/12 w-12/12 flex md:flex-col flex-row md:justify-center flex-wrap">
                     {links.map(e=>(
                         <li class="mr-2 mt-2 flex">
-                            <a hx-get={e.href} hx-target="body" hx-push-url="true" rel="noopener" target={e.external ? '_blank' : '_self'} class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href={e.href}>
+                            <a  rel="noopener" target={e.external ? '_blank' : '_self'} class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href={e.href}>
                                 <Icon name={e.text}/>
                                 <span class="mx-2">{e.text}</span> 
                                 <span class="outside">
