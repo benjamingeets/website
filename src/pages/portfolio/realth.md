@@ -3,7 +3,7 @@ layout: ../../layouts/Main-BlogPost.astro
 title: Realth
 emoji: ⚛️
 description: Clone de Twitter
-github: https://github.com/benjamingeets/realth
+github: https://github.com/benjamingeets/realth.vercel.app
 lien: https://realth.vercel.app
 techno:
     - React

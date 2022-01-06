@@ -4,7 +4,7 @@ title: VisualKraken
 emoji: 🦑
 description: Site vitrine développé avec Nuxt
 lien: https://visualkraken.netlify.app
-github: https://github.com/benjamingeets/VisualKraken-Website
+github: https://github.com/benjamingeets/visualkraken
 techno:
     - Vue.js
     - Nuxt.js

@@ -3,7 +3,7 @@ layout: ../../layouts/Main-BlogPost.astro
 title: Lorem Ipsum
 emoji: 🔮
 description: Site de génération de Lorem
-github: https://github.com/benjamingeets/Lorem-Ipsum-generator
+github: https://github.com/benjamingeets/lorem.geets.dev
 lien: https://lorem.geets.dev
 techno:
     - JavaScript

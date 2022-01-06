@@ -3,7 +3,7 @@ layout: ../../layouts/Main-BlogPost.astro
 title: Galandtristan.be
 emoji: 📘
 description: Portfolio jamstack
-github: https://github.com/benjamingeets/GalandTristan-Portfolio
+github: https://github.com/benjamingeets/galandtristan.be
 lien: https://galandtristan.be
 techno:
     - SvelteKit
