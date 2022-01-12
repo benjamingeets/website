@@ -3,62 +3,74 @@ import Main from '../layouts/Main.astro'
 import Icon from '../components/Icon.jsx'
 
 const links = [
-    {
-        text:'Github',href:'https://github.com/benjamingeets',external:true
-    },
-    {
-        text:'Portfolio',href:'/portfolio',external:false
-    },
-    {
-        text:'Contact',href:'mailto:benjamin@geets.dev',external:false
-    }
+{
+text:'Github',href:'https://github.com/benjamingeets',external:true
+},
+{
+text:'Portfolio',href:'/portfolio',external:false
+},
+{
+text:'Contact',href:'mailto:benjamin@geets.dev',external:false
+}
 ]
 
 const mainStack = ['SvelteKit',"React",'Node.js','Tailwind','Jamstack']
 const secondaryStack = ['Vue','Astro','11ty']
 
 ---
- <style>
-        .link .outside{
-            display: none;
-        }
-        .link:hover .outside{
-            display: block;
-        }
-    </style>
+<style>
+    .link .outside {
+        display: none;
+    }
+
+    .link:hover .outside {
+        display: block;
+    }
+</style>
 <Main index={true}>
-<div class="min-h-screen w-screen dark:bg-gray-900 dark:text-gray-100">
+    <div class="min-h-screen w-screen dark:bg-gray-900 dark:text-gray-100">
         <main class="max-w-3xl mx-auto min-h-screen flex items-center sm:p-4">
-            <div class="w-full bg-gray-200 dark:bg-gray-800 p-8 sm:rounded-lg sm:min-h-0 min-h-screen flex md:flex-row flex-col md:justify-between">
+            <div
+                class="w-full bg-gray-200 dark:bg-gray-800 p-8 sm:rounded-lg sm:min-h-0 min-h-screen flex md:flex-row flex-col md:justify-between">
                 <div class="flex flex-col md:w-9/12 w-12/12">
                     <h1 class="md:text-5xl text-3xl font-bold">Benjamin Geets 🍃</h1>
                     <h2 class="font-bold md:text-2xl text-lg my-2">Développeur web</h2>
                     <p>
                         {mainStack.map(e=>(
-                            <span>#{e}&nbsp;</span>
+                        <span>#{e}&nbsp;</span>
                         ))}
                         <small>
                             {secondaryStack.map(e=>(
                             <span>#{e}&nbsp;</span>
-                        ))}
-                        </small> 
+                            ))}
+                        </small>
                     </p>
                 </div>
                 <hr class="md:hidden block my-4 h-1 bg-gray-600">
                 <ul class="md:w-2/12 w-12/12 flex md:flex-col flex-row md:justify-center flex-wrap">
-                    {links.map(e=>(
-                        <li class="mr-2 mt-2 flex">
-                            <a  rel="noopener" target={e.external ? '_blank' : '_self'} class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href={e.href}>
-                                <Icon name={e.text}/>
-                                <span class="mx-2">{e.text}</span> 
-                                <span class="outside">
-                                    {e.external &&
-                                        <Icon name="External"/>
-                                    }
-                                </span> 
+                    <li class="mr-2 mt-2 flex">
+                        <a rel="noopener" target="_blank"
+                            class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition"
+                            href="https://github.com/benjamingeets">
+                            <Icon name="Github" />
+                            <span class="mx-2">Github</span>
+                            <span class="outside">
+                                <Icon name="External" />
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mr-2 mt-2 flex">
+                            <a class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="/portfolio" hx-get="/portfolio" hx-target="body" hx-push-url="true">
+                                <Icon name="Portfolio"/>
+                                <span class="mx-2">Portfolio</span> 
                             </a>
                         </li>
-                    ))}
+                         <li class="mr-2 mt-2 flex">
+                            <a class="link font-bold text-gray-600 dark:text-gray-300 hover:text-green-600 flex transition" href="mailto:benjamin@geets.dev">
+                                <Icon name="Contact"/>
+                                <span class="mx-2">Contact</span> 
+                            </a>
+                        </li>
                 </ul>
             </div>
         </main>
