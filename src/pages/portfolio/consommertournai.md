@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Main-BlogPost.astro
+layout: ../../layouts/Main-Portfolio.astro
 title: ConsommerTournai
 description: Side-project du confinement listant les commerces ouverts
 emoji: 🍎

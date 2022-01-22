@@ -51,6 +51,25 @@ export default ({ name, size = 25 }) => {
                     <polyline points="17 7 12 12 17 17" />
                 </svg>
             )
+        case 'Blog':
+            return(
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={size}
+                height={size}
+                fill="none"
+                stroke="#2c3e50"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                className="stroke-current"
+                viewBox="0 0 24 24"
+              >
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <path d="M13 20L20 13"></path>
+                <path d="M13 20v-6a1 1 0 011-1h6V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h7"></path>
+              </svg>
+            )
         default:
             return (
                 <p>no</p>

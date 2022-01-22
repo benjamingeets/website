@@ -1,0 +1,48 @@
+---
+    import Icon from '../components/Icon';
+import Main from '../layouts/Main.astro'
+const data = Astro.fetchContent('./blog/*.md');
+---
+
+<style>
+li:hover a div h2{
+    text-decoration: underline;
+}
+</style>
+
+    <Main title="Portfolio">
+        <div class="block md:absolute md:m-0 m-5 left-10 top-10">
+            <h1 class="text-2xl font-bold dark:text-gray-100">Benjamin Geets</h1>
+            <p class="dark:text-gray-100">blog</p>
+        </div>
+        <div class="fixed md:left-8 md:bottom-auto md:top-28 bottom-0 md:w-auto w-screen p-2">
+            <a href="/" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 flex md:justify-start justify-center items-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400">
+                <Icon name="Arrow-back"/>
+                Retour
+            </a>
+        </div>
+        <section class="mx-auto min-w-screen md:min-h-screen flex justify-center md:items-center items-end md:mb-0 mb-20">
+            <div class="max-w-3xl w-full px-2 md:mb-0 mb-2">
+                <ul>
+                    {data.map(e => (
+                        <li class="rounded-md hover:bg-gray-200">
+                            <a class="flex gap-2 p-3" href={e.url}>
+                                <div>
+                                    {e.emoji}
+                                </div>
+                                <div>
+                                    <h2 class="font-extrabold">
+                                      {e.title}
+                                    </h2>
+                                    <blockquote class="text-sm">
+                                        {e.description}
+                                    </blockquote>
+                                
+                                </div>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
+    </Main>

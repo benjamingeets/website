@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Main-BlogPost.astro
+layout: ../../layouts/Main-Portfolio.astro
 title: Galandtristan.be
 emoji: 📘
 description: Portfolio jamstack
