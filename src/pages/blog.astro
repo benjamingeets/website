@@ -25,7 +25,7 @@ li:hover a div h2{
             <div class="max-w-3xl w-full px-2 md:mb-0 mb-2">
                 <ul>
                     {data.map(e => (
-                        <li class="rounded-md hover:bg-gray-200">
+                        <li class="rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 dark:text-gray-100">
                             <a class="flex gap-2 p-3" href={`/blog/${e.slug}`}>
                                 <div>
                                     {e.emoji}
@@ -43,7 +43,7 @@ li:hover a div h2{
                         </li>
                     ))}
                 </ul>
-                <p class="flex justify-center italic mt-4"><a rel="noopener" target="_blank" class="flex gap-2 rounded-md p-2 items-center justify-center hover:bg-yellow-500 hover:text-white" href="/blog/feed.xml"><Icon name="Rss"/>Flux RSS</a></p>
+                <p class="flex justify-center italic mt-4"><a rel="noopener" target="_blank" class="flex gap-2 rounded-md p-2 items-center justify-center hover:bg-yellow-500 hover:text-white dark:text-gray-500" href="/blog/feed.xml"><Icon name="Rss"/>Flux RSS</a></p>
             </div>
         </section>
     </Main>
