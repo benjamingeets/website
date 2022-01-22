@@ -1,10 +1,10 @@
 ---
-layout: ../../layouts/Main-Portfolio.astro
 title: Galandtristan.be
 emoji: 📘
 description: Portfolio jamstack
 github: https://github.com/benjamingeets/galandtristan.be
 lien: https://galandtristan.be
+slug: galandtristan
 techno:
     - SvelteKit
     - Cockpit

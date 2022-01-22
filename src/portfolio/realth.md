@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/Main-Portfolio.astro
 title: Realth
 emoji: ⚛️
 description: Clone de Twitter
+slug: realth
 github: https://github.com/benjamingeets/realth.vercel.app
 lien: https://realth.vercel.app
 techno:

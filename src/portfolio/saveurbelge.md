@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/Main-Portfolio.astro
 title: SaveurBelge
 emoji: 👨‍🌾
 lien: https://saveurbelge.be
+slug: saveurbelge
 description: Web-app listant des commerces locaux
 techno:
     - Node.js

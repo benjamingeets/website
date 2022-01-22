@@ -70,6 +70,25 @@ export default ({ name, size = 25 }) => {
                 <path d="M13 20v-6a1 1 0 011-1h6V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h7"></path>
               </svg>
             )
+        case 'Rss':
+            return(
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={size}
+                height={size}
+                fill="none"
+                stroke="#2c3e50"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                className="stroke-current"
+                viewBox="0 0 24 24"
+              >
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+                <path d="M4 4a16 16 0 0116 16M4 11a9 9 0 019 9"></path>
+              </svg>
+            )
         default:
             return (
                 <p>no</p>

@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/Main-Portfolio.astro
 title: Lorem Ipsum
 emoji: 🔮
 description: Site de génération de Lorem
+slug: lorem-ipsum
 github: https://github.com/benjamingeets/lorem.geets.dev
 lien: https://lorem.geets.dev
 techno:

@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/Main-BlogPost.astro
 title: J'ai encore fait un blog
 emoji: 😮‍💨
 description: Ca doit bien être le 4ème en 1 an mais c'est pas grave.
+slug: jai-encore-fait-un-blog
 tags:
     - "blog"
 publishedat: 01/22/2022

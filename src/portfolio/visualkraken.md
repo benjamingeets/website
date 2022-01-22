@@ -1,9 +1,9 @@
 ---
-layout: ../../layouts/Main-Portfolio.astro
 title: VisualKraken
 emoji: 🦑
 description: Site vitrine développé avec Nuxt
 lien: https://visualkraken.netlify.app
+slug: visualkraken
 github: https://github.com/benjamingeets/visualkraken
 techno:
     - Vue.js

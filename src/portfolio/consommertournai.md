@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/Main-Portfolio.astro
 title: ConsommerTournai
 description: Side-project du confinement listant les commerces ouverts
 emoji: 🍎
+slug: consommertournai
 techno:
     - PHP
     - MySQL
