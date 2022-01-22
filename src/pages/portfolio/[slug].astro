@@ -12,14 +12,13 @@ export async function getStaticPaths() {
   return rep
 }
 const {title,content,techno,description,lien,github} = Astro.props
-console.log(content)
 ---
 
 <Main title={title} description={description}>
 <div class="fixed md:left-4 md:bottom-auto bottom-0 md:w-auto w-screen p-2">
     <a href="/portfolio" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 flex md:justify-start justify-center items-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400">
         <Icon name="Arrow-back"/>
-        Retour
+        Portfolio
     </a>
 </div>
 <article class="markdown max-w-2xl mx-auto mt-10 px-2">
