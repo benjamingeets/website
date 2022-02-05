@@ -27,13 +27,13 @@ const {title,description,tags,content,publishedat} = Astro.props
 ---
 
 <Main title={title} description={description}>
-<div class="fixed md:left-4 md:bottom-auto bottom-0 md:w-auto w-screen p-2">
-    <a href="/blog" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 flex md:justify-start justify-center items-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400">
+<div class="fixed bottom-0 w-screen p-2 md:left-4 md:bottom-auto md:w-auto">
+    <div class="relative flex items-center justify-center p-2 text-blue-800 bg-gray-200 border rounded-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 md:justify-start hover:bg-gray-100 hover:text-indigo-400">
         <Icon name="Arrow-back"/>
-        Blog
-    </a>
+        <a href="/blog" class="before:absolute before:w-full before:h-full before:left-0 before:top-0">Blog</a>
+    </div>
 </div>
-<article class="markdown max-w-2xl mx-auto mt-10 px-2">
+<article class="px-2 mx-auto mt-10 max-w-64ch markdown">
 
 <small>
 {
@@ -47,6 +47,6 @@ const {title,description,tags,content,publishedat} = Astro.props
 <p></p>
 {content.html}
 </article>
-<div class="md:h-0 h-20">
+<div class="h-20 md:h-0">
 </div>
 </Main>

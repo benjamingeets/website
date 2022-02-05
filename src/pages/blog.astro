@@ -11,39 +11,38 @@ li:hover a div h2{
 </style>
 
     <Main title="Blog">
-        <div class="block md:absolute md:m-0 m-5 left-10 top-10">
+        <div class="block m-5 md:absolute md:m-0 left-10 top-10">
             <h1 class="text-2xl font-bold dark:text-gray-100">Benjamin Geets</h1>
             <p class="dark:text-gray-100">blog</p>
         </div>
-        <div class="fixed md:left-8 md:bottom-auto md:top-28 bottom-0 md:w-auto w-screen p-2">
-            <a href="/" class="dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 flex md:justify-start justify-center items-center bg-gray-200 border hover:bg-gray-100 p-2 rounded-md  text-blue-800 hover:text-indigo-400">
+        <div class="fixed bottom-0 w-screen p-2 md:left-8 md:bottom-auto md:top-28 md:w-auto">
+            <div class="relative flex items-center justify-center p-2 text-blue-800 bg-gray-200 border rounded-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 md:justify-start hover:bg-gray-100 hover:text-indigo-400">
                 <Icon name="Arrow-back"/>
-                Accueil
-            </a>
+                <a class="before:absolute before:w-full before:h-full before:left-0 before:top-0" href="/">Accueil</a>
+            </div>
         </div>
-        <section class="mx-auto min-w-screen md:min-h-screen flex justify-center md:items-center items-end md:mb-0 mb-20">
-            <div class="max-w-3xl w-full px-2 md:mb-0 mb-2">
+        <section class="flex items-end justify-center mx-auto mb-20 min-w-screen md:min-h-screen md:items-center md:mb-0">
+            <div class="flex flex-col items-center w-full px-2 mb-2 max-w-64ch md:mb-0">
                 <ul>
                     {data.map(e => (
-                        <li class="rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 dark:text-gray-100">
-                            <a class="flex gap-2 p-3" href={`/blog/${e.slug}`}>
+                        <li class="w-full rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 dark:text-gray-100">
+                            <div class="relative flex gap-2 p-3" >
                                 <div>
                                     {e.emoji}
                                 </div>
                                 <div>
-                                    <h2 class="font-extrabold">
+                                    <a href={`/blog/${e.slug}`} class="font-extrabold before:absolute before:w-full before:h-full before:left-0 before:top-0">
                                       {e.title}
-                                    </h2>
+                                    </a>
                                     <blockquote class="text-sm">
                                         {e.description}
                                     </blockquote>
-                                
                                 </div>
-                            </a>
+                            </div>
                         </li>
                     ))}
                 </ul>
-                <p class="flex justify-center italic mt-4"><a rel="noopener" target="_blank" class="flex gap-2 rounded-md p-2 items-center justify-center hover:bg-yellow-500 hover:text-white dark:text-gray-500" href="/blog/feed.xml"><Icon name="Rss"/>Flux RSS</a></p>
+                <div class="relative flex items-center justify-center gap-2 p-2 mt-4 italic rounded-md hover:bg-yellow-500 hover:text-white dark:text-gray-500"><Icon name="Rss"/><a rel="noopener" target="_blank" class="before:absolute before:w-full before:h-full before:left-0 before:top-0" href="/blog/feed.xml">Flux RSS</a></div>
             </div>
         </section>
     </Main>
