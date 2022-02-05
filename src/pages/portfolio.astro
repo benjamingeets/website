@@ -10,9 +10,9 @@ const data = Astro.fetchContent('../portfolio/*.md');
             <p class="dark:text-gray-100">portfolio</p>
         </div>
         <div class="fixed bottom-0 w-screen p-2 md:left-8 md:bottom-auto md:top-28 md:w-auto">
-            <div class="absolute flex items-center justify-center p-2 text-blue-800 bg-gray-200 border rounded-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 md:justify-start hover:bg-gray-100 hover:text-indigo-400">
+            <div class="relative flex items-center justify-center p-2 text-blue-800 bg-gray-200 border rounded-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-900 dark:hover:text-blue-400 dark:text-blue-300 md:justify-start hover:bg-gray-100 hover:text-indigo-400">
                 <Icon name="Arrow-back"/>
-                <a href="/" class="before:absolute before:w-full before:h-full before:left-0 before:top-0">Accueil</a>
+                <a class="before:absolute before:w-full before:h-full before:left-0 before:top-0" href="/">Accueil</a>
             </div>
         </div>
         <section class="flex items-end justify-center mx-auto mb-20 min-w-screen md:min-h-screen md:items-center md:mb-0">
