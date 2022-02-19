@@ -1,0 +1,12 @@
+[
+    {
+        "name":"Github",
+        "href":"https://github.com/benjamingeets",
+        "external":true
+    },
+    {
+        "name":"Contact",
+        "href":"mailto:benjamin@geets.dev",
+        "external":false
+    }
+]
