@@ -12,7 +12,6 @@ module.exports = function (eleventyConfig) {
       compile: async (inputContent,inputPath) => {
         return async (data) => {
             edge.mount(join(__dirname, 'src/_includes/'))
-            console.log(data.meta)
             return edge.renderRaw(inputContent,data)
         };
       },
