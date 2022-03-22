@@ -1,0 +1,24 @@
+<script>
+    const size = 25
+    export let name
+</script>
+
+{#if name=="Github"}
+<svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" width={size} height={size} viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+{:else if name=="External"}
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden text-gray-600 stroke-current md:group-hover:block dark:text-gray-300" width={size} height={size} viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+    <line x1="10" y1="14" x2="20" y2="4" />
+    <polyline points="15 4 20 4 20 9" />
+</svg>
+{:else if name=="Contact"}
+<svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" width={size} height={size} viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <line x1="10" y1="14" x2="21" y2="3" />
+    <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+</svg>
+{/if}
