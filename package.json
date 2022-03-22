@@ -1,18 +1,14 @@
 {
-  "name": "11ty-example",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
+  "name": "@example/minimal",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve & npx tailwindcss -i ./src/style/style.css -o ./dist/style.css --watch",
-    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/style/style.css -o ./dist/style.css"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "edge.js": "^5.3.2"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "tailwindcss": "^3.0.23"
+    "astro": "^0.24.3"
   }
 }
