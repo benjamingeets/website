@@ -2,7 +2,7 @@
 const {name,size=40, classes}= Astro.props
 --- 
 
-<svg xmlns="http://www.w3.org/2000/svg" class={"stroke-current hover:bg-gray-300 transition bg-gray-200 p-2 rounded-full" + " " + classes} width={size} height={size} viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg stroke-width="2" xmlns="http://www.w3.org/2000/svg" class={"stroke-current hover:bg-gray-300 transition bg-gray-200 p-2 rounded-full" + " " + classes} width={size} height={size} viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
 {()=>{
     switch(name){
