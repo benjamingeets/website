@@ -1,10 +1,14 @@
 module.exports = {
-  content:  [
-    './public/**/*.html',
-    './src/**/*.{astro,svelte}',
-  ],
+  content: ['./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'main': 'Outfit'
+      },
+      colors: {
+        dark: '#2b2b2b'
+      },
+    },
   },
   plugins: [],
 }

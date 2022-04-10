@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Outfit";
+    src: url("/fonts/Outfit-VariableFont_wght.ttf");
+}
+p,h1,h2,h3,h4{
+    @apply font-bold text-dark font-main;
+}

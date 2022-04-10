@@ -1,39 +1,53 @@
 ---
-import Main from "../layouts/main.astro" 
-import Icon from "../components/Icon.svelte"
-import links from "../links.json"
+import Main from "../layouts/Main.astro"
+import Icon from "../components/Icon.astro"
+import picture from "../images/benjamin_geets.jpg"
+
+const links = [
+	{
+		href: "https://github.com/benjamingeets/",
+		icon: "github",
+		title: "Github",
+		color: "text-[rgb(38,41,47)]"
+	},
+	{
+		href: "mailto:benjamin@geets.dev",
+		icon: "mail",
+		title: "Contactez moi"
+	},
+	{
+		href: "https://www.linkedin.com/in/benjamingeets/",
+		icon: "linkedin",
+		title: "LinkedIn",
+		color: "text-[rgb(45,100,188)]"
+	},
+	{
+		href: "https://twitter.com/benjamingeets/",
+		icon: "twitter",
+		title: "Twitter",
+		color: "text-[rgb(74,153,234)]"
+	},
+]
 ---
 
 <Main>
-<main class="flex items-center max-w-4xl min-h-screen mx-auto sm:p-4">
-    <div
-        class="flex flex-col w-full min-h-screen p-8 bg-gray-200 dark:bg-gray-800 sm:rounded-lg sm:min-h-0 md:flex-row md:justify-between">
-        <div class="flex flex-col md:w-9/12 w-12/12">
-            <h1 class="text-3xl font-bold md:text-5xl">Benjamin Geets 🍃</h1>
-            <h2 class="my-2 text-lg font-bold md:text-2xl">Développeur web</h2>
-            <p class="max-w-[64ch]">
-                Je suis développeur web basé dans la région de Tournai en Belgique, axé sur l'écosystème JavaScript, front et backend.
-            </p>
-        </div>
-        <hr class="block h-1 my-4 bg-gray-600 md:hidden">
-        
-        <ul class="flex flex-row flex-wrap md:w-2/12 w-12/12 md:flex-col md:justify-center">
-		 	{links.map(link => 
-				 <li class="flex mt-2 mr-2">
-                    <div class="relative flex font-bold text-gray-600 transition link dark:text-gray-300 hover:text-green-600 group">
-						<Icon name={link.name}/>
-
-						{link.external ?
-							<a rel="noopener" target="_blank" href={link.href}class="mx-2 before:absolute before:w-full before:h-full before:left-0">{link.name}
-							</a>
-							<Icon name="External"/>
-							:
-							<a href={link.href} class="mx-2 before:absolute before:w-full before:h-full before:left-0">{link.name}</a>
-						}
-                    </div>
-                </li>
-			 )}
-        </ul>
-    </div>
-</main>
+	<div class="flex flex-col items-center gap-10 md:flex-row">
+		<figure class="bg-white rounded-md shadow-xl w-52">
+			<img src={picture} alt="Benjamin Geets">
+		</figure>
+		<div>
+			<h1 class="p-4 text-4xl font-bold bg-white rounded-md shadow-xl font-main">Benjamin Geets</h1>
+			<span class="inline-block p-2 mt-2 bg-white rounded-md shadow-xl">Développeur web</span>
+		</div>
+	</div>
+	<ul class="flex justify-center gap-2 mt-10">
+		{links.map(link=>
+			<li>
+				<a href={link.href} class={link.color ?? undefined} target={link.href.startsWith("https://") ? '_blank' : null}>
+					<Icon name={link.icon} />
+				</a>
+			</li>
+		)}
+	</ul>
 </Main>
+
