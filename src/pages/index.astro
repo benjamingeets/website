@@ -1,7 +1,53 @@
 ---
 import Main from "../layouts/Main.astro"
+import Icon from "../components/Icon.astro"
+import picture from "../images/benjamin_geets.jpg"
+
+const links = [
+	{
+		href: "https://github.com/benjamingeets/",
+		icon: "github",
+		title: "Github",
+		color: "text-[rgb(38,41,47)]"
+	},
+	{
+		href: "mailto:benjamin@geets.dev",
+		icon: "mail",
+		title: "Contactez moi"
+	},
+	{
+		href: "https://www.linkedin.com/in/benjamingeets/",
+		icon: "linkedin",
+		title: "LinkedIn",
+		color: "text-[rgb(45,100,188)]"
+	},
+	{
+		href: "https://twitter.com/benjamingeets/",
+		icon: "twitter",
+		title: "Twitter",
+		color: "text-[rgb(74,153,234)]"
+	},
+]
 ---
 
 <Main>
-	Main
+	<div class="flex flex-col items-center gap-10 md:flex-row">
+		<figure class="bg-white rounded-md shadow-xl w-52">
+			<img src={picture} alt="Benjamin Geets">
+		</figure>
+		<div>
+			<h1 class="p-4 text-4xl font-bold bg-white rounded-md shadow-xl font-main">Benjamin Geets</h1>
+			<span class="inline-block p-2 mt-2 bg-white rounded-md shadow-xl">Développeur web</span>
+		</div>
+	</div>
+	<ul class="flex justify-center gap-2 mt-10">
+		{links.map(link=>
+			<li>
+				<a href={link.href} class={link.color ?? undefined} target={link.href.startsWith("https://") ? '_blank' : null}>
+					<Icon name={link.icon} />
+				</a>
+			</li>
+		)}
+	</ul>
 </Main>
+
