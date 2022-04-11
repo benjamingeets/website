@@ -1,0 +1,21 @@
+---
+const links =[
+    {
+        href:"#",
+        text:"Accueil"
+    },
+    {
+        href:"#whoami",
+        text:"Qui suis-je?"
+    },
+]
+---
+<nav class="fixed z-30 w-full p-4 bg-white rounded-md shadow-xl md:bottom-4 md:w-auto md:right-4">
+    <ul class="flex gap-4">
+        {links.map(link=>
+            <li>
+                <a class="" href={link.href}>{link.text}</a>
+            </li>
+        )}
+    </ul>
+</nav>

@@ -1,5 +1,6 @@
 ---
 import "../css/app.css"
+import Nav from "../components/Nav.astro"
 const {title = "Benjamin Geets :: Développeur web (Tournai, Belgique)",description ="Développeur web dans la région de Tournai"} = Astro.props
 ---
 <!DOCTYPE html>
@@ -37,7 +38,8 @@ const {title = "Benjamin Geets :: Développeur web (Tournai, Belgique)",descript
     <meta property="twitter:description" content={description}>
     <script async defer src="https://nullitics.com/script.js"></script>
 </head>
-<body class="flex flex-col justify-center min-h-screen md:items-center" style="background:rgb(244,244,246)">
+<body style="background:rgb(244,244,246)" class="relative">
+    <Nav/>
 	<slot/>
     <script>
         import "../scripts/app.js"

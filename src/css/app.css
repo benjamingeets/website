@@ -6,6 +6,27 @@
     font-family: "Outfit";
     src: url("/fonts/Outfit-VariableFont_wght.ttf");
 }
-p,h1,h2,h3,h4{
-    @apply font-bold text-dark font-main;
+h1,h2,h3,h4{
+    @apply mt-4 mb-2 font-bold text-dark font-main;
+}
+p{
+    @apply leading-6 text-dark font-main max-w-[64ch];
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#scroll{
+    animation-duration: 2s;
+        animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
 }
