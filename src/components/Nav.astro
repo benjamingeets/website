@@ -10,11 +10,11 @@ const links =[
     },
 ]
 ---
-<nav class="fixed z-30 w-full p-4 bg-white rounded-md shadow-xl md:bottom-4 md:w-auto md:right-4">
+<nav class="sticky z-30 inline-block p-4 bg-white rounded-md shadow-xl md:top-4 md:w-auto md:left-4">
     <ul class="flex gap-4">
         {links.map(link=>
-            <li>
-                <a class="" href={link.href}>{link.text}</a>
+            <li class="">
+                <a class="p-2 transition rounded-md hover:shadow hover:bg-gray-200 hover:underline" href={link.href}>{link.text}</a>
             </li>
         )}
     </ul>
