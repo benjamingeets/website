@@ -18,3 +18,16 @@ div.addEventListener('mouseenter',(e)=>{
     div.classList.remove("transition")
     div.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
 })
+
+document.addEventListener('scroll',()=>{
+    const header = document.querySelector('header')
+    const scroll = document.querySelector('#scroll')
+    console.log(header.offsetHeight)
+    if(header.getBoundingClientRect().y < -(header.offsetHeight/4)){
+        scroll.classList.add('opacity-20')
+
+    }
+    else(
+        scroll.classList.remove('opacity-20')
+    )
+})
