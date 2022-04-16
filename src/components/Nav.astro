@@ -1,12 +1,16 @@
 ---
 const links =[
     {
-        href:"#",
-        text:"Accueil"
-    },
-    {
         href:"#whoami",
         text:"Qui suis-je?"
+    },
+    {
+        href:"#portfolio",
+        text:"Réalisations"
+    },
+    {
+        href:"#contact",
+        text:"Contact"
     },
 ]
 ---
@@ -15,7 +19,7 @@ const links =[
         <ul class="flex gap-4">
             {links.map(link=>
                 <li class="">
-                    <a class="p-2 transition rounded-md hover:shadow hover:bg-gray-200 hover:underline" href={link.href}>{link.text}</a>
+                    <a class="p-2 transition rounded-md hover:shadow hover:bg-gray-200" href={link.href}>{link.text}</a>
                 </li>
             )}
         </ul>
