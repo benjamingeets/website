@@ -7,12 +7,11 @@
     src: url("/fonts/Outfit-VariableFont_wght.ttf");
 }
 h1,h2,h3,h4{
-    @apply mt-4 mb-2 font-bold text-dark font-main;
+    @apply mb-2 font-bold text-dark font-main;
 }
-p{
-    @apply leading-6 text-dark font-main max-w-[64ch];
+p,label, input, textarea, address, span, a, button{
+    @apply leading-6 text-dark max-w-[64ch] font-main;
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -29,4 +28,8 @@ html{
     30%  { transform: translateY(-10px); }
     50%  { transform: translateY(0); }
     100% { transform: translateY(0); }
+}
+
+input, textarea{
+    @apply focus-within:ring-slate-500 focus-within:ring-2 focus-visible:outline-none;
 }
