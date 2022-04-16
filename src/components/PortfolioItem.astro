@@ -6,5 +6,5 @@ const {project} = Astro.props
     <figure class="relative w-full aspect-square">
         <img src={project.image} class="object-cover object-center w-full h-full rounded-md shadow-lg" alt={project.title}>
     </figure>
-    <a target="_blank" class="inline-block mt-4" href={project.href}>{project.href}</a>
+    <a target="_blank" class="inline-block mt-4 font-bold hover:underline" href={project.href}>{project.href}</a>
 </div>
