@@ -1,0 +1,31 @@
+---
+import Icon from "../components/Icon.astro"
+const links = [
+	{
+		href: "https://github.com/benjamingeets/",
+		icon: "github",
+		title: "Github",
+		color: "text-[rgb(38,41,47)]"
+	},
+	{
+		href: "mailto:benjamin@geets.dev",
+		icon: "mail",
+		title: "Contactez moi"
+	},
+	{
+		href: "https://www.linkedin.com/in/benjamingeets/",
+		icon: "linkedin",
+		title: "LinkedIn",
+		color: "text-[rgb(45,100,188)]"
+	},
+]
+---
+	<ul class="flex justify-center gap-2 mt-10">
+		{links.map(link=>
+			<li class="transition hover:-translate-y-1">
+				<a href={link.href} class={link.color ?? undefined} target={link.href.startsWith("https://") ? '_blank' : null}>
+					<Icon name={link.icon} />
+				</a>
+			</li>
+		)}
+	</ul>

@@ -1,47 +1,28 @@
 ---
 import Main from "../layouts/Main.astro"
-import Icon from "../components/Icon.astro"
-import picture from "../images/benjamin_geets.jpg"
-
-const links = [
-	{
-		href: "https://github.com/benjamingeets/",
-		icon: "github",
-		title: "Github",
-		color: "text-[rgb(38,41,47)]"
-	},
-	{
-		href: "mailto:benjamin@geets.dev",
-		icon: "mail",
-		title: "Contactez moi"
-	},
-	{
-		href: "https://www.linkedin.com/in/benjamingeets/",
-		icon: "linkedin",
-		title: "LinkedIn",
-		color: "text-[rgb(45,100,188)]"
-	},
-]
+import Links from "../components/Links.astro"
+import Hero from "../components/Hero.astro"
+import WhoAmI from "../components/WhoAmI.astro"
+import Nav from "../components/Nav.astro"
+import Services from "../components/Services.astro"
+import Portfolio from "../components/Portfolio.astro"
+import ContactMe from "../components/ContactMe.astro"
+import Footer from "../components/Footer.astro"
 ---
 
 <Main>
-	<div class="flex flex-col items-center gap-10 md:flex-row">
-		<figure class="overflow-hidden bg-white rounded-md shadow-xl w-52">
-			<img src={picture} alt="Benjamin Geets">
-		</figure>
-		<div>
-			<h1 class="p-4 text-4xl font-bold bg-white rounded-md shadow-xl font-main">Benjamin Geets</h1>
-			<span class="inline-block p-2 mt-2 bg-white rounded-md shadow-xl">Développeur web</span>
-		</div>
+	<header class="relative flex flex-col justify-center min-h-screen md:items-center">
+		<Hero/>
+		<Links/>
+		<a href="#whoami" class="absolute flex flex-col items-center self-center justify-center transition bottom-5" id="scroll"><span>scroll</span>
+		</a>
+	</header>
+	<div>
+		<Nav/>
+		<WhoAmI/>
+		<Services/>
+		<Portfolio/>
+		<ContactMe/>
 	</div>
-	<ul class="flex justify-center gap-2 mt-10">
-		{links.map(link=>
-			<li class="transition hover:-translate-y-1">
-				<a href={link.href} class={link.color ?? undefined} target={link.href.startsWith("https://") ? '_blank' : null}>
-					<Icon name={link.icon} />
-				</a>
-			</li>
-		)}
-	</ul>
+	<Footer/>
 </Main>
-

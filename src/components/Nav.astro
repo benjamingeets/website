@@ -1,0 +1,27 @@
+---
+const links =[
+    {
+        href:"#whoami",
+        text:"Qui suis-je?"
+    },
+    {
+        href:"#portfolio",
+        text:"Réalisations"
+    },
+    {
+        href:"#contact",
+        text:"Contact"
+    },
+]
+---
+<div class="sticky z-30 flex justify-center top-4">
+    <nav class="inline-block p-4 bg-white rounded-md shadow-xl md:w-auto">
+        <ul class="flex gap-4">
+            {links.map(link=>
+                <li class="">
+                    <a class="p-2 transition rounded-md hover:shadow hover:bg-gray-200" href={link.href}>{link.text}</a>
+                </li>
+            )}
+        </ul>
+    </nav>
+</div>
