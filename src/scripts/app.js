@@ -57,7 +57,6 @@ function isInViewPort(name) {
     const navItem = nav.querySelector('a[href="' + name + '"]')
     const navigation = nav.querySelectorAll('a')
     var bounding = elt.getBoundingClientRect();
-    console.log(name, bounding.top)
 
     if (
         bounding.top >= 0 &&
@@ -95,4 +94,5 @@ form.addEventListener('submit',(e)=>{
       })
         .then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
+    console.log(formData)
 })
