@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "Outfit";
-    src: url("/fonts/Outfit-VariableFont_wght.ttf") local(Arial);
+    src: url("/fonts/Outfit-VariableFont_wght.ttf");
     font-display: swap;
 }
 h1,h2,h3,h4{
