@@ -8,10 +8,10 @@
     font-display: swap;
 }
 h1,h2,h3,h4{
-    @apply mb-2 font-bold text-dark font-main;
+    @apply mb-2 font-bold leading-loose text-dark font-main;
 }
 p,label, input, textarea, address, span, a, button, li{
-    @apply leading-6 text-dark max-w-[64ch] font-main;
+    @apply leading-relaxed text-dark max-w-[64ch] font-main tracking-wider;
 }
 html{
     scroll-behavior: smooth;
