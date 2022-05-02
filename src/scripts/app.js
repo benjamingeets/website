@@ -1,12 +1,54 @@
+
+import { animate, stagger } from "motion"
+
+animate(
+    ".hero-item-motion",
+    {
+        y: [-10, 0],
+        opacity: [0, 1]
+    },
+    {
+        delay: stagger(0.2),
+        duration: 0.5,
+        easing: [.22, .03, .26, 1]
+    }
+)
+
+animate(
+    ".links-motion li",
+    {
+        y: [10, 0],
+        opacity: [0, 1]
+    },
+    {
+        delay: stagger(0.3),
+        duration: 0.5,
+        easing: [.22, .03, .26, 1]
+    }
+)
+
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('header')
+    const scroll = document.querySelector('#scroll')
+    if (header.getBoundingClientRect().y < -(header.offsetHeight / 4)) {
+        scroll.classList.add('opacity-20')
+
+    } else(
+        scroll.classList.remove('opacity-20')
+    )
+    
+})
+
+
 const form = document.querySelector('form')
-form.addEventListener('submit',(e)=>{
+form.addEventListener('submit', (e) => {
     e.preventDefault()
     let formData = new FormData(form);
     fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
-      })
+    })
         .then(() => {
             form.innerHTML = `
             <div class="flex items-center justify-center lg:mt-10">
@@ -21,5 +63,5 @@ form.addEventListener('submit',(e)=>{
         })
         .catch((error) => alert(error));
 
-   
+
 })

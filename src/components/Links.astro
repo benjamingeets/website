@@ -20,7 +20,7 @@ const links = [
 	},
 ]
 ---
-	<ul class="flex justify-center gap-2 mt-10">
+	<ul class="flex justify-center gap-2 mt-10 links-motion">
 		{links.map(link=>
 			<li class="transition hover:-translate-y-1">
 				<a href={link.href} class={link.color ?? undefined} target={link.href.startsWith("https://") ? '_blank' : null}>
