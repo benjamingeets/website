@@ -2,11 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/**
+* Fix fonts that render as bold in Firefox
+*
+* Put this near the top of your style.css
+* Before any overriding styles
+*/
+
+
+
 @font-face {
     font-family: "Outfit";
     src: url("/fonts/Outfit-VariableFont_wght.ttf");
     font-display: swap;
 }
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/**
+* Firefox specific rule
+*/
+
+@-moz-document url-prefix() {
+    body .with-ff-fix {
+        font-weight: lighter !important;
+    }
+}
+
+
 h1,h2,h3,h4{
     @apply mb-2 font-bold leading-loose text-dark font-main;
 }
