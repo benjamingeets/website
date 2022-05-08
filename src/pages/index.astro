@@ -11,10 +11,10 @@ import Footer from "../components/Footer.astro"
 ---
 
 <Main>
-	<header class="relative flex flex-col justify-center min-h-screen md:items-center">
+	<header class="flex relative flex-col justify-center min-h-screen md:items-center">
 		<Hero/>
 		<Links/>
-		<a href="#whoami" class="absolute flex flex-col items-center self-center justify-center transition bottom-5" id="scroll"><span>scroll</span>
+		<a href="#whoami" class="flex absolute bottom-5 flex-col justify-center items-center self-center transition" id="scroll"><span>scroll</span>
 		</a>
 	</header>
 	<WhoAmI/>
@@ -22,5 +22,4 @@ import Footer from "../components/Footer.astro"
 	<Portfolio/>
 	<ContactMe/>
 	<Footer/>
-	<a class="sr-only" rel="me" href="https://indieweb.social/@geets">Mastodon</a>
 </Main>
