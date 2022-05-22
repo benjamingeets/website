@@ -1,12 +1,15 @@
 ---
-import picture from "../images/benjamin_geets.webp"
+import Me from "../images/benjamin_geets.webp"
+const data = await fetch('https://api.storyblok.com/v1/cdn/stories' + `?&token=${"vyhhfI0Whx23sSpF3GyRhAtt"}&starts_with=liens&cv=${Date.now()} `)
+const {stories} = await data.json()
+
+console.log(stories)
+
+
 ---
-<div class="flex flex-col items-center gap-10 mx-auto md:flex-row">
-	<figure class="overflow-hidden bg-white rounded-md shadow-xl hero-item-motion w-52">
-		<img width={800} height={800} src={picture} alt="Benjamin Geets">
-	</figure>
-	<div>
-		<h1 class="p-4 text-4xl font-bold bg-white rounded-md shadow-xl hero-item-motion font-main">Benjamin Geets</h1>
-		<span class="inline-block p-2 mt-2 bg-white rounded-md shadow-xl hero-item-motion">Développeur web</span>
-	</div>
-</div>
+    <section class="flex flex-col justify-center lg:my-56">
+        <h1 class=" text-7xl">Benjamin Geets</h1>
+    <span class="block">💼 Développeur web</span>
+    <span class="block text-gray-700">📍 Tournai, Belgique</span>
+    </section>
+    

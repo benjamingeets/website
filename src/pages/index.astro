@@ -1,25 +1,14 @@
 ---
 import Main from "../layouts/Main.astro"
-import Links from "../components/Links.astro"
-import Hero from "../components/Hero.astro"
-import WhoAmI from "../components/WhoAmI.astro"
-import Nav from "../components/Nav.astro"
-import Services from "../components/Services.astro"
-import Portfolio from "../components/Portfolio.astro"
 import ContactMe from "../components/ContactMe.astro"
-import Footer from "../components/Footer.astro"
+import Work from "../components/Work.astro";
+import Hero from "../components/Hero.astro";
+import Blog from "../components/Blog.astro";
 ---
 
 <Main>
-	<header class="flex relative flex-col justify-center min-h-screen md:items-center">
-		<Hero/>
-		<Links/>
-		<a href="#whoami" class="flex absolute bottom-5 flex-col justify-center items-center self-center transition" id="scroll"><span>scroll</span>
-		</a>
-	</header>
-	<WhoAmI/>
-	<Services/>
-	<Portfolio/>
+	<Hero/>
+	<Work/>
+	<Blog/>
 	<ContactMe/>
-	<Footer/>
 </Main>

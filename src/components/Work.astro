@@ -1,0 +1,17 @@
+---
+const data = await fetch('https://api.storyblok.com/v1/cdn/stories' + `?&token=${"vyhhfI0Whx23sSpF3GyRhAtt"}&starts_with=portfolio&cv=${Date.now()} `)
+const {stories} = await data.json()
+
+---
+<section class="w-full max-w-5xl mx-auto">
+    <h2 class="text-4xl">Projets sur lesquels j'ai travaillé</h2>
+    <ul>
+        {stories.map(item=>
+            <li>
+                <a class=" text-blue-600 hover:underline after:content-['_↗'] after:font-sans" target="_blank" href={item.content.href}>
+                    {item.content.name}
+                </a>    
+            </li>
+        )}
+    </ul>
+</section>

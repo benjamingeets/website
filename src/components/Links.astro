@@ -1,31 +1,20 @@
 ---
-import Icon from "../components/Icon.astro"
-const links = [
-	{
-		href: "https://github.com/benjamingeets/",
-		icon: "github",
-		title: "Github",
-		color: "text-[rgb(38,41,47)]"
-	},
-	{
-		href: "mailto:benjamin@geets.dev",
-		icon: "mail",
-		title: "Contactez moi"
-	},
-	{
-		href: "https://www.linkedin.com/in/benjamingeets/",
-		icon: "linkedin",
-		title: "LinkedIn",
-		color: "text-[rgb(45,100,188)]"
-	},
-]
+import Me from "../images/benjamin_geets.webp"
+const data = await fetch('https://api.storyblok.com/v1/cdn/stories' + `?&token=${"vyhhfI0Whx23sSpF3GyRhAtt"}&starts_with=liens&cv=${Date.now()} `)
+const {stories} = await data.json()
 ---
-	<ul class="flex justify-center gap-2 mt-10 links-motion">
-		{links.map(link=>
-			<li class="transition hover:-translate-y-1">
-				<a href={link.href} class={link.color ?? undefined} target={link.href.startsWith("https://") ? '_blank' : null}>
-					<Icon name={link.icon} />
-				</a>
-			</li>
-		)}
-	</ul>
+
+<div class="flex gap-10 mt-5 lg:sticky lg:block lg:mt-56 top-5">
+    <figure>
+        <img  class="w-32 rounded" src={Me} alt="">
+    </figure>
+    <ul class="flex flex-col items-end">
+        {stories.map(link=>
+            <li>
+                <a class="text-blue-600 hover:underline after:content-['_↗'] after:font-sans" target="_blank" href={link.content.href}>
+                    {link.content.name}
+                </a>
+            </li>
+        )}
+    </ul>
+</div>

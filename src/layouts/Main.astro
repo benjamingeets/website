@@ -1,6 +1,9 @@
 ---
+import Footer from "../components/Footer.astro"
+import Links from "../components/Links.astro"
 import "../css/app.css"
 const {title = "Benjamin Geets :: Développeur web (Tournai, Belgique)",description ="Développeur web dans la région de Tournai"} = Astro.props
+
 ---
 <!DOCTYPE html>
 <html>
@@ -37,8 +40,15 @@ const {title = "Benjamin Geets :: Développeur web (Tournai, Belgique)",descript
     <meta property="twitter:description" content={description}>
     <script async defer src="https://nullitics.com/script.js"></script>
 </head>
-<body style="background:rgb(244,244,246)" class="relative">
-	<slot/>
+<body style="background:rgb(244,244,246)">
+	<main class="relative flex flex-col-reverse items-start justify-between w-full max-w-5xl gap-20 px-4 mx-auto lg:gap-0 lg:px-0 lg:flex-row">
+        <article class="space-y-20">
+            <slot/>
+        </article>
+        <Links/>
+    </main>
+
+	<Footer/>
     <script>
         import "../scripts/app.js"
     </script>
