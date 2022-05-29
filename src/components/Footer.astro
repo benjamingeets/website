@@ -1,25 +1,31 @@
 ---
 const links = [
     {
-        text:"Github",
-        href:"https://github.com/benjamingeets"
+        text: "Github",
+        href: "https://github.com/benjamingeets"
+    }, {
+        text: "Twitter",
+        href: "https://twitter.com/benjamingeets"
     },
     {
-        text:"Linkedin",
-        href:"https://linkedin.com/in/benjamingeets"
+        text: "Linkedin",
+        href: "https://linkedin.com/in/benjamingeets"
     },
 ]
 ---
-<footer class="px-4 py-20 mt-20 bg-gray-200">
-   <div class="grid items-center max-w-5xl mx-auto md:grid-cols-2">
-        <address class="not-italic">
+
+<footer class="px-4 py-4 bg-white lg:py-10 bg-opacity-80">
+    <div class="grid items-center max-w-5xl mx-auto md:grid-cols-2">
+        <address class="flex flex-col not-italic">
             <span class="font-semibold">Adresse</span>
-            <a target="_blank" class="block hover:underline" href="https://www.google.be/maps/place/Incubateur+Num%C3%A9rique/@50.6181169,3.3398116,17z/data=!3m1!4b1!4m5!3m4!1s0x47c2df57f69af1bd:0x18996599764f68e6!8m2!3d50.6180818!4d3.3420359">32, rue du progrès <br/> 7503 Tournai</a>
+            <a target="_blank" class="self-start inline-block hover:underline"
+                href="https://www.google.be/maps/place/Incubateur+Num%C3%A9rique/@50.6181169,3.3398116,17z/data=!3m1!4b1!4m5!3m4!1s0x47c2df57f69af1bd:0x18996599764f68e6!8m2!3d50.6180818!4d3.3420359">32,
+                rue du progrès <br /> 7503 Tournai</a>
             <span class="font-semibold">Email</span>
-            <a class="block hover:underline" href="mailto:benjamin@geets.dev">benjamin@geets.dev</a>
+            <a class="self-start block hover:underline" href="mailto:benjamin@geets.dev">benjamin@geets.dev</a>
         </address>
         <div>
-            <span class="block mt-10 text-5xl font-semibold md:mt-0 md:text-right">
+            <span class="block mt-10 text-2xl font-semibold lg:text-5xl md:mt-0 md:text-right">
                 Benjamin Geets
             </span>
             <span class="block font-semibold md:text-right">
@@ -27,11 +33,11 @@ const links = [
             </span>
             <ul class="flex gap-2 mt-2 md:justify-end">
                 {links.map(link=>
-                    <li>
-                        <a target="_blank" class="hover:underline" href={link.href}>{link.text}</a>
-                    </li>
+                <li>
+                    <a target="_blank" class="hover:underline" href={link.href}>{link.text}</a>
+                </li>
                 )}
             </ul>
         </div>
-   </div>
+    </div>
 </footer>

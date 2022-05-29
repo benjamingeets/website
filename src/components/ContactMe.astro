@@ -1,17 +1,22 @@
-<section>
-        <h2 class="text-4xl">Je suis disponible pour vos projets</h2>
-        <p>Si vous avez une question ou un projet dont vous souhaitez discuter, vous êtes libre de me contacter via le formulaire ci-dessous ou à l'adresse email <a class="font-semibold" href="mailto:benjamin@geets.dev">benjamin@geets.dev</a></p>
-        <form data-netlify="true" name="contact" class="flex flex-col gap-4 rounded-md max-w-[64ch]" action="POST" id="contactform">
-            <label class="font-semibold" for="email">
-                Adresse e-mail
-            </label>
-            <input required class="self-start p-2 rounded-md bg-gray-50" name="email" id="email" type="email" placeholder="sylvain@example.org">
-            <label class="font-semibold" for="message">
-                Message
-            </label>
-            <textarea required class="p-2 rounded-md bg-gray-50 " id="message" name="message" rows={4} placeholder="Bonjour, je vous contacte au sujet.."></textarea>
-            <button class="p-4 transition border rounded-md cursor-default md:self-start hover:bg-gray-200">
-                Envoyer mon message
-            </button>
-        </form>
+<section class="p-2 bg-white md:p-4 lg:ml-4 md:bg-opacity-90">
+    <h2 class="text-2xl lg:text-4xl">Je suis disponible pour vos projets</h2>
+    <p>Si vous avez une question ou un projet dont vous souhaitez discuter, vous êtes libre de me contacter via le
+        formulaire ci-dessous ou à l'adresse email <a class="font-semibold"
+            href="mailto:benjamin@geets.dev">benjamin@geets.dev</a></p>
+    <form data-netlify="true" name="contact" class="flex flex-col gap-4 max-w-[64ch]" action="POST" id="contactform">
+        <label class="font-semibold" for="email">
+            Adresse e-mail
+        </label>
+        <input required class="self-start p-2 bg-gray-50" name="email" id="email" type="email"
+            placeholder="sylvain@example.org">
+        <label class="font-semibold" for="message">
+            Message
+        </label>
+        <textarea required class="p-2 bg-gray-50 " id="message" name="message" rows={4}
+            placeholder="Bonjour, je vous contacte au sujet.."></textarea>
+        <button
+            class="p-4 transition bg-white border-2 cursor-default hover:border-blue-600 border-slate-500 md:self-start hover:bg-blue-600 hover:text-white">
+            Envoyer mon message
+        </button>
+    </form>
 </section>

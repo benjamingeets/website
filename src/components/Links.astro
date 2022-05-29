@@ -1,20 +1,22 @@
 ---
 import Me from "../images/benjamin_geets.webp"
 const data = await fetch('https://api.storyblok.com/v1/cdn/stories' + `?&token=${"vyhhfI0Whx23sSpF3GyRhAtt"}&starts_with=liens&cv=${Date.now()} `)
-const {stories} = await data.json()
+const { stories } = await data.json()
 ---
 
-<div class="flex gap-10 mt-5 lg:sticky lg:block lg:mt-56 top-5">
+<div
+    class="flex justify-between w-full gap-10 p-1 mt-5 bg-white lg:mr-4 lg:w-auto lg:justify-start lg:sticky lg:block lg:mt-56 top-5">
     <figure>
-        <img  width="1000" height="1000" class="w-32 rounded" src={Me} alt="">
+        <img width="1000" height="1000" class="w-32" src={Me} alt="">
     </figure>
     <ul class="flex flex-col items-end">
         {stories.map(link=>
-            <li>
-                <a class="text-blue-600 hover:underline after:content-['_↗'] after:font-sans" target="_blank" href={link.content.href}>
-                    {link.content.name}
-                </a>
-            </li>
+        <li>
+            <a class="text-blue-600 hover:underline after:content-['_↗'] after:font-sans" target="_blank"
+                href={link.content.href}>
+                {link.content.name}
+            </a>
+        </li>
         )}
     </ul>
 </div>
