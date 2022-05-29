@@ -56,9 +56,9 @@ html{
 
 
 input, textarea{
-    @apply outline-2 outline-slate-500 outline focus-visible:outline-offset-2 focus-visible:outline-blue-600; 
+    @apply outline-2 outline-slate-500 outline focus-within:rounded-none focus-within:outline-blue-600; 
 }
 
 a, button{
-    @apply focus-within:outline-2 focus-within:outline-blue-600 focus-within:outline-offset-2 focus-within:outline-dashed;
+    @apply focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2 focus-visible:outline-dashed;
 }
