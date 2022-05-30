@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
     })
         .then(() => {
             form.innerHTML = `
-                <p class="text-green-500">J'ai bien <b>reçu votre message</b>, je vous répondrai dans les plus brefs délais.</p>
+                <p class="text-green-500 bg-white bg-opacity-90 p-4">J'ai bien <b>reçu votre message</b>, je vous répondrai dans les plus brefs délais.</p>
            
             `
         })
