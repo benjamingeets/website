@@ -17,11 +17,11 @@ Au final, faire toute une application avec Nuxt/Next pour la générer côté se
 
 ## La fluidité
 
-Le JavaScript, c'est bien, mais quand on s'en sert avec parcimonie. Il est indispensable pour faire des menus hamburger pour mobile ou quelques animations par exemple, mais pour le reste, on peut très souvent - voire tout le temps - s'en passer sans que **personne ne s'en rende vraiment compte**.
-
 J'ai longtemps été très fan du rendu AJAX entre les pages. C'était chouette de charger du contenu sans avoir le gros écran blanc du navigateur. Mais aujourd'hui je trouve cela un peu anecdotique. Est-ce que ce ne serait pas une énorme hallucination collective de dev qui nous pousse à croire qu'on a besoin de ça?
 
 **(D'autant plus qu'aujourd'hui on n'a plus d'écran blanc entre 2 pages)**
+
+Le JavaScript, c'est bien, mais quand on s'en sert avec parcimonie. Il est indispensable pour faire des menus hamburger pour mobile ou quelques animations par exemple, mais pour le reste, on peut très souvent - voire tout le temps - s'en passer sans que **personne ne s'en rende vraiment compte**.
 
 ## L'alternative
 
@@ -35,7 +35,7 @@ Cela permet aussi de gérer le contenu depuis un CMS Headless afin de re-rendre 
 
 Alors certes, en terme des performances, les web-app, sont bien moins gourmandes pour le serveur. Mais est-ce important?
 
-J'entends qu'il soit crucial pour Facebook d'optimiser le rendu de la moindre de ses pages, car cela implique des sommes colossales. Mais pour le reste du monde, on en a pas grand chose à foutre je pense. Tant que l'expérience est fluide et que la page s'affichage rapidement chez le visiteur.
+J'entends qu'il soit crucial pour Facebook d'optimiser le rendu de la moindre de ses pages, car cela implique des sommes colossales. Mais pour le reste du monde, on en a pas grand chose à foutre je pense. Tant que l'expérience est fluide et que la page s'affiche rapidement chez le visiteur.
 
 La différence du temps pris par une requête entre un fichier HTML pré-généré ou la réponse d'un serveur qui génère la page au vol est imperceptible.
 
@@ -43,12 +43,16 @@ Et cela nous mène à la question suivante :
 
 > Vaut-il mieux un fichier HTML lourd dépendant de fichiers JS ou un fichier HTML généré au vol avec peu ou pas de JS ?
 
-A la lecture de cette article, vous savez ou je me situe.
+A la lecture de cet article, vous savez où je me situe.
 
 Etant donné qu'on a, de toutes façons, besoin d'un serveur pour avoir de l'interaction avec des données, je préfère tout gérer avec ce dernier.
 
 ## Conclusion
 
-Et c'est ce qui m'amène aujourd'hui à ne plus que faire des site générés côté serveur ou des applications dites _backend_ avec Laravel ou Adonis. Je préfère faire des backend simples que des applications frontend compliquées pour palier au manque de back et sans dépendre d'aucun outil externe.
+Et c'est ce qui m'amène aujourd'hui à ne plus que faire des sites, sans JavaScript, générés côté serveur ou des applications axée autour d'un _backend_ avec Laravel ou Adonis.
 
-C'est tout ça qui me fait me dire qu'on n'a peut être pas besoin de ce tooling frontend. Que le HTML, ça faisait très bien le job et que quand ça ne suffit pas, un petit framework backend sera presque toujours la meilleure réponse.
+Je préfère faire des backend simples que des applications frontend compliquées pour palier au manque de back et sans dépendre d'aucun outil externe.
+
+C'est tout ça qui me fait me dire qu'on n'a peut-être pas besoin de ce tooling frontend.
+
+Que le HTML, ça faisait très bien le job et que quand ça ne suffit pas, un petit framework backend sera presque toujours la meilleure réponse.
