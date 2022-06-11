@@ -3,7 +3,7 @@ title: Ma manière de travailler en tant que développeur web
 publish_date: 2022-06-13
 ---
 
-Dans ma routine de développeur, j'ai toute une liste de logiciels et d'outils dont je ne saurais me passer.
+Dans ma routine de développeur, j'ai toute une liste de logiciels et d'outils dont je ne saurais me passer (même si c'est plus vrai pour certains que d'autres!).
 
 ## Logiciels
 
@@ -30,7 +30,11 @@ Mes add-ons:
 - [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
 - [AdonisJS Extension](https://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension)
 
-### Firefox
+Et j'utilise la police [Fira Code](https://github.com/tonsky/FiraCode) qui permet - notamment - de faire des jolies flèches en PHP.
+
+### Navigateur web
+
+[Firefox](https://www.mozilla.org/fr/firefox/) (ainsi que [Ungoogled Chromium](https://ungoogled-software.github.io/ungoogled-chromium-binaries/) et Safari pour tester que mon code marche correctement partout)
 
 - [UBlock Origin](https://addons.mozilla.org/fr/firefox/addon/ublock-origin/)
 - [Unhook](https://addons.mozilla.org/fr/firefox/addon/youtube-recommended-videos/)
@@ -39,13 +43,6 @@ Mes add-ons:
 - [Wappalyzer](https://addons.mozilla.org/fr/firefox/addon/wappalyzer/)
 - [OctoLinker](https://addons.mozilla.org/fr/firefox/addon/octolinker/)
 - [Breakthrough Twitter Login Wall](https://addons.mozilla.org/fr/firefox/addon/breakthrough-twitter-loginwall/)
-
-### Packager Manager
-
-- [Composer](https://getcomposer.org/)
-- [NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
-- [Deno](https://deno.land)
-- [Brew](https://brew.sh)
 
 ### Frameworks & co
 
@@ -56,7 +53,7 @@ Mes add-ons:
 
 ### Gestion de DB
 
-J'utilise au quotidien [TablePlus](https://tableplus.com/) qui est très largement suffisant dans sa version gratuite, sinon j'ai aussi testé [Beekeeper](https://www.beekeeperstudio.io/) qui était très efficace aussi (je suis resté sur TablePlus par habitude).
+J'utilise au quotidien [TablePlus](https://tableplus.com/) qui est très largement suffisant dans sa version gratuite, sinon j'ai aussi testé [Beekeeper](https://www.beekeeperstudio.io/) qui était très efficace (je suis resté sur TablePlus par habitude).
 
 ## Matériel
 
@@ -64,19 +61,21 @@ J'utilise au quotidien [TablePlus](https://tableplus.com/) qui est très largeme
 - iPhone SE 2020
 - Magic Trackpad
 - Magic Keyboard
-- Airpods
+- Airpods 2
 
 ## Veille
 
-Pour effectuer ma veille, j'ai quelques abonnements dans mon lecteur de flux RSS [NetNewsWire](https://netnewswire.com/) et je suis [le channel #cool-links du discord CodingLab](discord.gg/7Guzz9e)
+Pour effectuer ma veille, j'ai quelques abonnements dans mon lecteur de flux RSS [NetNewsWire](https://netnewswire.com/) et je suis [le channel #cool-links du discord CodingLab](https://discord.gg/7Guzz9e)
 
-## Host & domaines
+## Hébergement & domaines
 
 Pour les domaines, infomaniak.
 
 Pour l'hébergement, selon les cas, j'utilise
 
 - [Netlify](https://netlify.com): sites statiques généré avec un framework comme Astro.
-- [Deno Deploy](https://deno.com): sites/API perso.
+- [Deno Deploy](https://deno.com): sites/API.
 - [Ni-host](https://ni-host.com): petits projets PHP.
 - [Infomaniak](https://infomaniak.com): projets PHP plus importants.
+
+J'essaie de concenter au maximum mes applications sur les mêmes services.
