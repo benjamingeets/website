@@ -6,7 +6,7 @@ blog({
   title: "Benjamin Geets",
   author: "Benjamin Geets",
   avatar: "./frog.png",
-  avatarClass: "full",
+  avatarClass: "border-none",
   links: [
     { title: "Email", url: "mailto:benjamin@loak.studio" },
     { title: "GitHub", url: "https://github.com/benjamingeets" },
