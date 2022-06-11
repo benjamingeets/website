@@ -3,7 +3,7 @@ title: J'ai refait un blog
 publish_date: 2022-06-11
 ---
 
-J'ai toujours eu du mal à tenir un site perso. J'ai eu des blogs, des portfolios, des simples cartes de visites. Mais je m'en lasse toujours très vite. C'est encore une fois ce qui est arrivé.
+J'ai toujours eu du mal à tenir un site perso. J'ai eu des blogs, des portfolios, des simples cartes de visite. Mais je m'en lasse toujours très vite. C'est encore une fois ce qui est arrivé.
 
 Mais cette fois, j'y crois, je vais tenir ce site/blog plus de 1 mois. Au moins 2 quoi.
 

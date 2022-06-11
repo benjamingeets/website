@@ -47,6 +47,6 @@ Mon déploiement sur un VPS s'est bien mieux passé et je ne me suis plus embêt
 
 ![](/saveurbelge/filamentphp.png)
 
-Tout allait bien sur la V2. Mais gérer un serveur, ça reste assez pénible. Et la V2 n'avait pas de back office, tout se gérer directement sur le fichier SQLite du serveur. Autant dire que les mises à jours et la modération étaient très pénible. Et c'est là que j'ai décidé de re-coder le tout, mais en Laravel cette fois-ci ! Laraval étant l'inspiration d'Adonis, la structure est similaire, mais Laravel a l'avantage d'être bien plus ancien et donc de disposer de bien plus de package.
+Tout allait bien sur la V2. Mais gérer un serveur, ça reste assez pénible. Et la V2 n'avait pas de back office, tout se gérait directement sur le fichier SQLite du serveur. Autant dire que les mises à jours et la modération étaient très pénibles. Et c'est là que j'ai décidé de re-coder le tout, mais en Laravel cette fois-ci ! Laraval étant une inspiration d'Adonis, la structure est similaire. Mais Laravel a l'avantage d'être bien plus ancien et donc de disposer de bien plus de packages.
 
-J'ai donc importé mes templates en Edge vers du Blade et j'ai recodé la logique. Pour le backoffice, il m'a suffi de créer un petit dashboard avec [Filament](https://filamentphp.com) et d'héberger le tout sur un petit serveur mutualisé que ne me demande presque aucune gestion.
+J'ai donc converti mes templates en Edge vers Blade et j'ai recodé la logique. Pour le backoffice, il m'a suffi de créer un petit dashboard avec [Filament](https://filamentphp.com) et d'héberger le tout sur un petit serveur mutualisé que ne me demande presque aucune gestion.

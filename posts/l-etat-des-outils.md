@@ -21,11 +21,12 @@ J'ai longtemps été très fan du rendu AJAX entre les pages. C'était chouette 
 
 **(D'autant plus qu'aujourd'hui on n'a plus d'écran blanc entre 2 pages)**
 
-Le JavaScript, c'est bien, mais quand on s'en sert avec parcimonie. Il est indispensable pour faire des menus hamburger pour mobile ou quelques animations par exemple, mais pour le reste, on peut très souvent - voire tout le temps - s'en passer sans que **personne ne s'en rende vraiment compte**.
+Le JavaScript, c'est bien, mais quand on s'en sert avec parcimonie. Il est indispensable pour faire des menus
+pour mobile ou quelques animations, mais pour le reste, on peut très souvent - voire tout le temps - s'en passer sans que **personne ne s'en rende vraiment compte**.
 
 ## L'alternative
 
-Astro a été un vrai renouveau dans cet univers. Sans trop de complexité - au final, on peut n'écrire que du HTML dans les fichiers `.astro` - on a la possibilité de créer des pages, scindées en composant pour s'y retrouver, exclusivement en HTML. Mais il est aussi possible d'utiliser le langage de templating d'autres frameworks si vous y êtes habitué.
+Astro a été un vrai renouveau dans cet univers. Sans trop de complexité - au final, on peut n'écrire que du HTML dans les fichiers `.astro` - on a la possibilité de créer des pages, scindées en composants pour s'y retrouver, exclusivement en HTML. Mais il est aussi possible d'utiliser le langage de templating d'autres frameworks si vous y êtes habitué.
 
 Et le rendu est lui même uniquement du HTML, sauf si vous avez besoin de JavaScript. Mais cette approche sans JavaScript par défaut me semble idéale.
 
@@ -39,11 +40,7 @@ J'entends qu'il soit crucial pour Facebook d'optimiser le rendu de la moindre de
 
 La différence du temps pris par une requête entre un fichier HTML pré-généré ou la réponse d'un serveur qui génère la page au vol est imperceptible.
 
-Et cela nous mène à la question suivante :
-
 > Vaut-il mieux un fichier HTML lourd dépendant de fichiers JS ou un fichier HTML généré au vol avec peu ou pas de JS ?
-
-A la lecture de cet article, vous savez où je me situe.
 
 Etant donné qu'on a, de toutes façons, besoin d'un serveur pour avoir de l'interaction avec des données, je préfère tout gérer avec ce dernier.
 
@@ -51,8 +48,8 @@ Etant donné qu'on a, de toutes façons, besoin d'un serveur pour avoir de l'int
 
 Et c'est ce qui m'amène aujourd'hui à ne plus que faire des sites, sans JavaScript, générés côté serveur ou des applications axée autour d'un _backend_ avec Laravel ou Adonis.
 
-Je préfère faire des backend simples que des applications frontend compliquées pour palier au manque de back et sans dépendre d'aucun outil externe.
+Je préfère faire des backends simples que des applications frontend compliquées pour palier au manque de back et sans dépendre d'aucun outil externe.
 
-C'est tout ça qui me fait me dire qu'on n'a peut-être pas besoin de ce tooling frontend.
+C'est tout ça qui me fait me dire qu'on n'a peut-être pas tant besoin de ce tooling frontend.
 
 Que le HTML, ça faisait très bien le job et que quand ça ne suffit pas, un petit framework backend sera presque toujours la meilleure réponse.

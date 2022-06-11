@@ -9,12 +9,6 @@ Dans ma routine de développeur, j'ai toute une liste de logiciels et d'outils d
 
 ### Visual Studio Code
 
-Classique. J'aurais **vraiment** aimé utiliser un autre IDE _- en tous cas, pas un développé par Microsoft-_, malheureusement, dans la cadre de mon travail je me dois d'être le plus productif possible, donc j'ai besoin de la facilité induite par VS Code, et par GitHub Copilot qui fait ganger un temps fou en proposant la réponse alors qu'on est seulement entrain de penser au problème.
-
-J'utilise aussi beaucoup le source control qui permet de faire ses commits de manière visuelle.
-
-Mes add-ons:
-
 - [Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)
 - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
