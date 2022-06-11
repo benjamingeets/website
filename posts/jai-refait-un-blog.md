@@ -11,6 +11,6 @@ Une des problématiques qui me faisait toujours supprimer mes blogs c'était mon
 
 J'ai simplement pris le module de blog fait par Deno. Comme ça, je n'ai rien à faire, je n'ai pas à réfléchir à un design que je vais - de toutes façons - trouver dépassé en 2 semaines.
 
-Pas de CMS, rien, juste du fichier Markdown que je pourrai ré-utiliser même en passer sur d'autres langages/plateformes.
+Pas de CMS, rien, juste du fichier Markdown que je pourrai ré-utiliser même en passant sur d'autres langages/plateformes.
 
 Ce blog va aussi être l'occasion pour moi de m'éloigner de Twitter, que j'utilise bien trop. Ca m'évitera de poster des tweets de 280 caractères qui ne sont pas biens intéressants et me laissera détailler ma pensée, si ça en vaut la peine !
