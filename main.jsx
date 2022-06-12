@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import blog, {h} from "https://raw.githubusercontent.com/benjamingeets/deno_blog/main/blog.tsx";
+import blog, {h} from "https://raw.githubusercontent.com/denoland/deno_blog/blob/main/blog.tsx";
 
 blog({
   title: "Benjamin Geets",
