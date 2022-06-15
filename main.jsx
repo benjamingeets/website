@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import blog, {h} from "https://raw.githubusercontent.com/denoland/deno_blog/main/blog.tsx";
+import blog, {h} from "./deno_blog/blog.tsx";
 
 blog({
   title: "Benjamin Geets",
@@ -17,6 +17,7 @@ blog({
   background: "#f9f9f9",
   lang:'fr',
   timezone:'fr-BE',
+  middleware:[],
 
   footer: <footer class="mt-20 pb-16 lt-sm:pb-8 lt-sm:mt-16">
     <p class="flex items-center gap-2.5 text-gray-400/800 text-sm">
