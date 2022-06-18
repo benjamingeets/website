@@ -17,7 +17,7 @@ blog({
   background: "#f9f9f9",
   lang:'fr',
   timezone:'fr-BE',
-  middleware:[],
+  description:`Développeur web fullstack (PHP & JS). 🗺 Tournai, Belgique.`,
 
   footer: <footer class="mt-20 pb-16 lt-sm:pb-8 lt-sm:mt-16">
     <p class="flex items-center gap-2.5 text-gray-400/800 text-sm">
