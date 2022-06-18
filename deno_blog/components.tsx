@@ -182,7 +182,7 @@ export function PostPage({ post, state }: PostPageProps) {
         <p class="mt-1 text-gray-500">
           {(state.author || post.author) && (
             <span>
-              By {state.author || post.author} at {" "}
+              Par {state.author || post.author} le {" "}
             </span>
           )}
           <PrettyDate date={post.publishDate} timezone={state.timezone} />
