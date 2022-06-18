@@ -1,5 +1,5 @@
 ---
-title: J'ai découvert le GPC et ça a l'air cool comme idée
+title: Le Global Privacy Control
 publish_date: 2022-06-18
 ---
 
