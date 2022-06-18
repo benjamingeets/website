@@ -12,11 +12,20 @@ Mais il faut bien dire que c'est une corvée à faire respecter. Que ce soit en 
 
 Bref, je pense que malgré les efforts européen, la vie privée sur Internet est **très loin** d'être un droit décemment respecté. 
 
-Mais aujourd'hui, j'ai découvert le **G**lobale P**rivacy** **C**ontrol. Et c'est une idée qui m'a bien plue. 
+Mais aujourd'hui, j'ai découvert le [**G**lobale P**rivacy** **C**ontrol](https://globalprivacycontrol.org/). Et c'est une idée qui m'a bien plue. 
 
 Le concept du GPC, c'est d'envoyer un unique signal pour informer le serveur que le visiteur ne souhaite pas être tracké. Cela permet un gain de temps pour le client qui n'a plus à décocher tous les horribles toggles pour faire respecter son choix, mais ça pourrait être un gros gain de temps niveau dev aussi, plus besoin de faire des cookie notice horrible qu'au final 2/3 des utilisateurs vont accepter par flemme.
 
 Actuellement, le GPC n'est pas très supporté. Mais il est disponible sur Firefox, Bravo & Duckduckgo browser.
+
+## [Activer le GPC sur Firefox](https://blog.mozilla.org/netpolicy/2021/10/28/implementing-global-privacy-control/)
+
+- Taper `about:config` dans la barre d'urL 
+- Chercher `globalprivacycontrol`
+- Activer `privacy.globalprivacycontrol.enabled` et `privacy.globalprivacycontrol.functionality.enabled`
+- Vérifier que ça fonctionne bien en allant sur [https://globalprivacycontrol.org/](https://globalprivacycontrol.org/)
+
+Encore une fois, c'est encore loin d'être accessible à tout le monde.
 
 ## Comment ça marche côté serveur
 
