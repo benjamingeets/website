@@ -117,7 +117,7 @@ export function Index({ state, posts }: IndexProps) {
 function PostCard({ post, timezone }: { post: Post; timezone: string }) {
   return (
     <div class="pt-12 first:pt-0">
-      <h3 class="text-2xl font-bold">
+      <h3 class="text-2xl font-bold text-gray-900">
         <a class="" href={post.pathname}>
           {post.title}
         </a>
