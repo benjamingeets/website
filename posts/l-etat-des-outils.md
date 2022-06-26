@@ -17,12 +17,14 @@ Au final, faire toute une application avec Nuxt/Next pour la générer côté se
 
 ## La fluidité
 
-J'ai longtemps été très fan du rendu AJAX entre les pages. C'était chouette de charger du contenu sans avoir le gros écran blanc du navigateur. Mais aujourd'hui je trouve cela un peu anecdotique. Est-ce que ce ne serait pas une énorme hallucination collective de dev qui nous pousse à croire qu'on a besoin de ça?
+J'ai longtemps été très fan du rendu AJAX entre les pages (avec Unpoly ou Turbolinks). C'était chouette de charger du contenu sans avoir le gros écran blanc du navigateur. Mais aujourd'hui je trouve cela un peu anecdotique. Est-ce que ce ne serait pas une énorme hallucination collective de dev qui nous pousse à croire qu'on a besoin de ça?
 
 **(D'autant plus qu'aujourd'hui on n'a plus d'écran blanc entre 2 pages)**
 
 Le JavaScript, c'est bien, mais quand on s'en sert avec parcimonie. Il est indispensable pour faire des menus
 pour mobile ou quelques animations, mais pour le reste, on peut très souvent - voire tout le temps - s'en passer sans que **personne ne s'en rende vraiment compte**.
+
+Le seul vrai avantage de ces solutions est qu'elles permettent de pré-charger les liens au survol, ce qui permet de donner l'illusion d'un chargement instantané.
 
 ## L'alternative
 
