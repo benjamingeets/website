@@ -154,7 +154,7 @@ export function PostPage({ post, state }: PostPageProps) {
         <a
           href="/"
           class="inline-flex items-center gap-1 text-sm text-gray-500/80 hover:text-gray-700 transition-colors"
-          title="Back to Index Page"
+          title="Retour à l'accueil"
         >
           <svg
             className="inline-block w-5 h-5"
@@ -166,7 +166,7 @@ export function PostPage({ post, state }: PostPageProps) {
               fill="currentColor"
             />
           </svg>
-          INDEX
+          ACCUEIL
         </a>
       </div>
       {post.coverHtml && (
