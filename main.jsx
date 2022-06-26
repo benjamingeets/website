@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import blog, {h} from "./deno_blog/blog.tsx";
+import blog, {h, redirects} from "./deno_blog/blog.tsx";
 
 blog({
   title: "Benjamin Geets",
@@ -18,7 +18,11 @@ blog({
   lang:'fr',
   timezone:'fr-BE',
   description:`Développeur web fullstack (PHP & JS). 🗺 Tournai, Belgique.`,
-
+  middlewares:[
+    redirects({
+      "l-etat-des-outils": "l-etat-des-outils-frontend",
+    }),
+  ],
   footer: <footer class="mt-20 pb-16 lt-sm:pb-8 lt-sm:mt-16">
     <p class="flex items-center gap-2.5 text-gray-400/800 text-sm">
       <span>© 2022 Benjamin Geets</span>
