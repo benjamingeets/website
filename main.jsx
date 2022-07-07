@@ -21,6 +21,7 @@ blog({
   middlewares:[
     redirects({
       "l-etat-des-outils": "l-etat-des-outils-frontend",
+      "le-gpc":"le-global-privacy-control"
     }),
   ],
   footer: <footer class="mt-20 pb-16 lt-sm:pb-8 lt-sm:mt-16">
