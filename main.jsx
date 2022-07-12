@@ -17,13 +17,6 @@ blog({
   lang: "fr",
   timezone: "fr-BE",
   description: `Développeur web fullstack (PHP & JS). 🗺 Tournai, Belgique.`,
-  middlewares: [
-    redirects({
-      "l-etat-des-outils": "l-etat-des-outils-frontend",
-      "le-gpc": "le-global-privacy-control",
-      "l-etat-des-outils-frontend": "la-maturite-des-ecosystemes-du-web",
-    }),
-  ],
   footer: (
     <footer class="mt-20 pb-16 lt-sm:pb-8 lt-sm:mt-16">
       <p class="flex items-center gap-2.5 text-gray-400/800 text-sm">
