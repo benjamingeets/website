@@ -12,6 +12,7 @@ blog({
     { title: "GitHub", url: "https://github.com/bngts" },
     { title: "LinkedIn", url: "https://linkedin.com/in/benjamingeets" },
     { title: "loak.studio", url: "https://loak.studio" },
+    { title: "Twitter", url: "https://twitter.com/benjamingeets" },
   ],
   background: "#f9f9f9",
   lang: "fr",
