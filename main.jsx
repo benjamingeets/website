@@ -9,7 +9,7 @@ blog({
   avatarClass: "border-none",
   links: [
     { title: "Email", url: "mailto:benjamin@loak.studio" },
-    { title: "GitHub", url: "https://github.com/benjamingeets" },
+    { title: "GitHub", url: "https://github.com/bngts" },
     { title: "LinkedIn", url: "https://linkedin.com/in/benjamingeets" },
     { title: "loak.studio", url: "https://loak.studio" },
   ],
