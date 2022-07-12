@@ -21,6 +21,7 @@ blog({
     redirects({
       "l-etat-des-outils": "l-etat-des-outils-frontend",
       "le-gpc": "le-global-privacy-control",
+      "l-etat-des-outils-frontend": "la-maturite-des-ecosystemes-du-web",
     }),
   ],
   footer: (
