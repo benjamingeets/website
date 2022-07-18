@@ -13,6 +13,7 @@ blog({
     { title: "LinkedIn", url: "https://linkedin.com/in/benjamingeets" },
     { title: "loak.studio", url: "https://loak.studio" },
     { title: "Twitter", url: "https://twitter.com/geetsww" },
+    { title: "Reddit", url: "https://www.reddit.com/user/geetsww" },
   ],
   background: "#f9f9f9",
   lang: "fr",
