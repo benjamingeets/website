@@ -10,14 +10,12 @@ blog({
   links: [
     { title: "Email", url: "mailto:benjamin@loak.studio" },
     { title: "GitHub", url: "https://github.com/geetsww" },
-    { title: "LinkedIn", url: "https://linkedin.com/in/benjamingeets" },
     { title: "loak.studio", url: "https://loak.studio" },
-    { title: "Twitter", url: "https://twitter.com/geetsww" },
   ],
   background: "#f9f9f9",
   lang: "fr",
   timezone: "fr-BE",
-  description: `Développeur web (PHP & JS) @ loak.studio. Tournai, Belgique.`,
+  description: `Développeur web (PHP & JS) @ <a href="https://loak.studio">loak.studio</a>. Tournai, Belgique.`,
   footer: (
     <footer class="mt-20 pb-16 lt-sm:pb-8 lt-sm:mt-16">
       <p class="flex items-center gap-2.5 text-gray-400/800 text-sm">
