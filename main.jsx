@@ -17,8 +17,8 @@ blog({
   description: `Développeur web (PHP & JS) @ loak.studio. Tournai, Belgique.`,
   footer: (
     <footer class="mt-20 pb-16 lt-sm:pb-8 lt-sm:mt-16">
-      <p class="flex items-center gap-2.5 text-gray-400/800 text-sm">
-        <span>© 2022 Benjamin Geets, <a class="text-[#28625E] underline" href="https://loak.studio">loak.studio</a>. Propulsé par Deno Blog.</span>
+      <p class="flex flex-col lg:flex-row items-center gap-2.5 text-gray-400/800 text-sm">
+        <span>© 2022 Benjamin Geets, <a class="text-[#28625E] hover:no-underline underline" href="https://loak.studio">loak.studio</a>. Propulsé par Deno Blog.</span>
         <a
           href="/feed"
           class="inline-flex items-center gap-1 hover:text-gray-800 transition-colors"
