@@ -10,7 +10,6 @@ blog({
   links: [
     { title: "Email", url: "mailto:benjamin@loak.studio" },
     { title: "GitHub", url: "https://github.com/geetsww" },
-    { title: "loak.studio", url: "https://loak.studio" },
   ],
   background: "#f9f9f9",
   lang: "fr",
@@ -19,7 +18,7 @@ blog({
   footer: (
     <footer class="mt-20 pb-16 lt-sm:pb-8 lt-sm:mt-16">
       <p class="flex items-center gap-2.5 text-gray-400/800 text-sm">
-        <span>© 2022 Benjamin Geets</span>, <a href="https://loak.studio">loak.studio</a>. Propulsé par Deno Blog.
+        <span>© 2022 Benjamin Geets, <a href="https://loak.studio">loak.studio</a>. Propulsé par Deno Blog.</span>
         <a
           href="/feed"
           class="inline-flex items-center gap-1 hover:text-gray-800 transition-colors"
